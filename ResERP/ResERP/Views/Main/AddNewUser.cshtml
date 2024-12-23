@@ -1,0 +1,123 @@
+﻿@model NewUserViewModel
+
+@{
+    ViewData["Title"] = "Add New User | ERP";
+}
+
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5">
+    <h1 class="text-white fw-bold">Add New User</h1>
+    <div class="container-fluid w-75">
+        <form asp-controller="Auth" asp-action="AddNewUser" method="post">
+            @*Row 1*@
+            <div class="row">
+                @*Role Selector*@
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">User Role</label>
+                    <select asp-for="RoleID" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                        <option selected>Select User Role</option>
+                        <option value="2">Admin</option>
+                        <option value="3">Manager</option>
+                        <option value="4">Employee</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2 class="mt-4 text-white fw-bold">User Account</h2>
+
+            @*Row 2*@
+            <div class="row mt-3">
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">User Email</label>
+                        <input asp-for="AccountEmail" type="email" class="form-control" placeholder="Enter new user email">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">User Password</label>
+                        <input asp-for="AccountPassword" type="password" class="form-control" placeholder="Enter new user password">
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mt-5 text-white fw-bold">User Information</h2>
+            @*Row 3*@
+            <div class="row mt-3">
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Full Name</label>
+                        <input asp-for="FullName" type="text" class="form-control" placeholder="Enter new user full name">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Date of Birth</label>
+                        <input asp-for="DateBirth" type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Phone Number</label>
+                        <input asp-for="PhoneNumber" type="text" class="form-control" placeholder="Enter new user phone number">
+                    </div>
+                </div>
+            </div>
+
+            @*Row 4*@
+            <div class="row mt-5">
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Street Number</label>
+                        <input asp-for="StreetNumber" type="text" class="form-control" placeholder="Enter new user street number">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Street Address</label>
+                        <input asp-for="StreetAddress" type="text" class="form-control" placeholder="Enter new user street address">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">City</label>
+                        <input asp-for="City" type="text" class="form-control" placeholder="Enter new user city">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Province</label>
+                        <input asp-for="Province" type="text" class="form-control" placeholder="Enter new user province">
+                    </div>
+                </div>
+            </div>
+
+            @*Row 5*@
+            <div class="row mt-2">
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Postal Code</label>
+                        <input asp-for="PostalCode" type="text" class="form-control" placeholder="Enter new user postal code">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Country</label>
+                    <select asp-for="Country" class="form-select form-select mb-3" aria-label="Large select example">
+                        <option selected>Select User Country</option>
+                        <option value="CA">Canada</option>
+                        <option value="US">United States of America</option>
+                        <option value="KR">Korea, Republic Of</option>
+                        <option value="CN">China</option>
+                        <option value="IN">India</option>
+                        <option value="JP">Japan</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-5 gap-4">
+                <button type="reset" class="btn btn-danger btn-lg" style="width: 250px;">Cancel</button>
+                <button type="Submit" class="btn btn-primary btn-lg" style="width: 250px;">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

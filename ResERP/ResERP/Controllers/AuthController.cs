@@ -20,6 +20,7 @@ namespace ResERP.Controllers
         }
 
         //Sign In
+        [HttpPost]
         public async Task<IActionResult> SignIn(Account model)
         {
             //Check ModelState
@@ -48,11 +49,14 @@ namespace ResERP.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
+            var roleName = await _context.Roles.FirstOrDefaultAsync(r => r.RoleID == account.RoleID);
+
             //Define Claims
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.FullName),
-                new Claim("Email", account.AccountEmail)
+                new Claim("Email", account.AccountEmail),
+                new Claim("Role", roleName.RoleName)
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -69,6 +73,64 @@ namespace ResERP.Controllers
 
           
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddNewUser(NewUserViewModel model)
+        {
+            if (!ModelState.IsValid) 
+            {
+                return RedirectToAction("AddNewUser", "Main");
+            }
+
+            //add model to account
+            var account = new Account
+            {
+                AccountEmail = model.AccountEmail,
+                AccountPassword = model.AccountPassword,
+                RoleID = model.RoleID,
+            };
+
+            try
+            {
+                await _context.Accounts.AddAsync(account);
+                await _context.SaveChangesAsync();
+
+                //add model to personal
+                var personal = new Personal
+                {
+                    FullName = model.FullName,
+                    DateBirth = model.DateBirth,
+                    PhoneNumber = model.PhoneNumber,
+                    AccountID = account.AccountID,
+                };
+
+                await _context.Personal.AddAsync(personal);
+                await _context.SaveChangesAsync();
+
+                //add model to address
+                var address = new Address
+                {
+                    StreetNumber = model.StreetNumber,
+                    StreetAddress = model.StreetAddress,
+                    City = model.City,
+                    Province = model.Province,
+                    PostalCode = model.PostalCode,
+                    Country = model.Country,
+                    PersonalID = personal.PersonalID,
+                };
+
+                await _context.Address.AddAsync(address);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("Index", "Main");
+            }
+            catch (Exception ex) 
+            {
+                return RedirectToAction("AddNewUser", "Main");
+            }
+
+            return RedirectToAction("AddNewUser", "Main");
         }
     }
 }

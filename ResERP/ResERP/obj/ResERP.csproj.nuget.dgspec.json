@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\ResERP\\ResERP\\ResERP.csproj": {}
+    "C:\\Projects\\reserp\\ResERP\\ResERP.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\ResERP\\ResERP\\ResERP.csproj": {
+    "C:\\Projects\\reserp\\ResERP\\ResERP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\ResERP\\ResERP\\ResERP.csproj",
+        "projectUniqueName": "C:\\Projects\\reserp\\ResERP\\ResERP.csproj",
         "projectName": "ResERP",
-        "projectPath": "C:\\Projects\\ResERP\\ResERP\\ResERP.csproj",
+        "projectPath": "C:\\Projects\\reserp\\ResERP\\ResERP.csproj",
         "packagesPath": "C:\\Users\\dever\\.nuget\\packages\\",
         "outputPath": "C:\\Projects\\ResERP\\ResERP\\obj\\",
         "projectStyle": "PackageReference",

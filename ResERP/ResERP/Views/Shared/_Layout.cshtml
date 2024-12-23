@@ -9,30 +9,40 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ResERP.styles.css" asp-append-version="true" />
 </head>
-<body class="bg-dark">
+<body style="background-color: #121212;">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <!-- 좌측: 브랜드 로고와 네비게이션 -->
+                @*Left Side: Logo, Navbar*@
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand fw-bold fs-2" asp-controller="Main" asp-action="Index">RES ERP</a>
                     <ul class="navbar-nav ms-3">
                         <li class="nav-item">
                             <a class="nav-link text-white fs-4" asp-controller="Main" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-4" href="#">Employee</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Setting
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                @*If user role is admin, show link or not!*@
+                                @if (User.FindFirst("Role").Value == "Admin")
+                                {
+                                    <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Main" asp-action="AddNewUser">Add New User</a></li>
+                                    <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Main" asp-action="UserList">User List</a></li>
+                                }
+                            </ul>
                         </li>
                     </ul>
                 </div>
 
-                <!-- 우측: 로그아웃 버튼 -->
+                @*Right Side: User Info, Sign Out *@ 
                 <div class="ms-auto d-flex align-items-center">
                     @if (User?.Identity?.IsAuthenticated == true)
                     {
                         <div class="text-white me-3 text-end">
-                            <div class="fw-bold">@User.Identity?.Name</div> <!-- 첫 번째 줄 -->
-                            <div class="fw-bold">@User.FindFirst("Email")?.Value</div> <!-- 두 번째 줄 -->
+                            <div class="fw-bold">@User.Identity?.Name</div>
+                            <div class="fw-bold">@User.FindFirst("Email")?.Value</div>
                         </div>
 
                         <a class="btn btn-lg bg-danger text-white fw-bold" asp-controller="Auth" asp-action="SignOut">SignOut</a>
@@ -40,6 +50,7 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     @RenderBody()
