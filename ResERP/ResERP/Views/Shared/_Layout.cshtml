@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ResERP</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ResERP.styles.css" asp-append-version="true" />
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- 좌측: 브랜드 로고와 네비게이션 -->
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand fw-bold fs-2" asp-controller="Main" asp-action="Index">RES ERP</a>
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" asp-controller="Main" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="#">Employee</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 우측: 로그아웃 버튼 -->
+                <div class="ms-auto d-flex align-items-center">
+                    @if (User?.Identity?.IsAuthenticated == true)
+                    {
+                        <div class="text-white me-3 text-end">
+                            <div class="fw-bold">@User.Identity?.Name</div> <!-- 첫 번째 줄 -->
+                            <div class="fw-bold">@User.FindFirst("Email")?.Value</div> <!-- 두 번째 줄 -->
+                        </div>
+
+                        <a class="btn btn-lg bg-danger text-white fw-bold" asp-controller="Auth" asp-action="SignOut">SignOut</a>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
