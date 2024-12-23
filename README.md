@@ -1,2 +1,3 @@
-# RestaurantERP
-ERP Software for Restaurants
+# RestaurantERP - Development
+
+
