@@ -123,14 +123,12 @@ namespace ResERP.Controllers
                 await _context.Address.AddAsync(address);
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction("Index", "Main");
+                return RedirectToAction("UserList", "Main");
             }
             catch (Exception ex) 
             {
                 return RedirectToAction("AddNewUser", "Main");
             }
-
-            return RedirectToAction("AddNewUser", "Main");
         }
     }
 }

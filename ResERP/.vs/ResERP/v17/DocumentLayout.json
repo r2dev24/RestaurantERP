@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Projects\\ResERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\main\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -15,12 +15,19 @@
       "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\main\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ERP/True/SqlTable/dbo.Roles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,26 +49,49 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "ResERP\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "ResERP\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-24T08:44:03.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.Roles [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ERP/True/SqlTable/dbo.Roles.sql",
+              "ToolTip": "dbo.Roles [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-24T08:24:26.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UserList.cshtml",
               "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Main\\UserList.cshtml",
               "RelativeDocumentMoniker": "ResERP\\Views\\Main\\UserList.cshtml",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Main\\UserList.cshtml",
               "RelativeToolTip": "ResERP\\Views\\Main\\UserList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-23T23:38:18.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ResERP\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ResERP\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-23T19:37:58.449Z",
               "EditorCaption": ""
@@ -81,13 +111,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainController.cs",
               "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\MainController.cs",
               "RelativeDocumentMoniker": "ResERP\\Controllers\\MainController.cs",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\MainController.cs",
               "RelativeToolTip": "ResERP\\Controllers\\MainController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAA6wEIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T19:01:02.319Z",
               "EditorCaption": ""
@@ -100,7 +130,7 @@
               "RelativeDocumentMoniker": "ResERP\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\AuthController.cs",
               "RelativeToolTip": "ResERP\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAqwH0AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAqwHcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T18:45:52.46Z",
               "EditorCaption": ""

@@ -1,3 +1,82 @@
-﻿@{
+﻿@model IEnumerable<NewUserViewModel>
+
+@{
     ViewData["Title"] = "User List | ERP";
+
+    var currentPage = (int)ViewData["CurrentPage"];
+    var totalPages = (int)ViewData["TotalPages"];
 }
+
+
+<div class="d-flex justify-content-center mt-5 p-5">
+    <table class="table">
+        <thead>
+            <tr class="table-secondary text-center">
+                <th style="width: 10%; border-right: 1px solid black;">Role</th>
+                <th style="width: 25%; border-right: 1px solid black;">Email</th>
+                <th style="width: 20%; border-right: 1px solid black;">Full Name</th>
+                <th style="width: 15%; border-right: 1px solid black;">Contact</th>
+                <th style="width: 30%; border-right: 1px solid black;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr class="align-middle">
+                    <td class="text-center" style="width: 10%; border-right: 1px solid black;">
+                        @switch(user.RoleID) {
+                            case 1:
+                                <span>IT Admin</span>
+                                break;
+                            case 2:
+                                <span>Admin</span>
+                                break;
+                            case 3:
+                                <span>Manager</span>
+                                break;
+                            case 4:
+                                <span>Employee</span>
+                                break;
+                            default:
+                                <span>Unknown</span>
+                                break;
+                        }
+                    </td>
+                    <td class="text-center" style="width: 25%; border-right: 1px solid black;">@user.AccountEmail</td>
+                    <td class="text-center" style="width: 20%; border-right: 1px solid black;">@user.FullName</td>
+                    <td class="text-center" style="width: 15%; border-right: 1px solid black;">@user.PhoneNumber</td>
+                    <td class="text-center" style="width: 30%; border-right: 1px solid black;">
+                        <button class="btn btn-danger me-4" style="width: 150px;">Delete</button>
+                        <button class="btn btn-dark" style="width: 150px;">Detail</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Pagination -->
+<nav aria-label="Page navigation" class="d-flex justify-content-center">
+    <ul class="pagination">
+        @if (currentPage > 1)
+        {
+            <li class="page-item">
+                <a class="page-link" href="?page=@(currentPage - 1)">Previous</a>
+            </li>
+        }
+
+        @for (int i = 1; i <= totalPages; i++)
+        {
+            <li class="page-item @(i == currentPage ? "active" : "")">
+                <a class="page-link" href="?page=@i">@i</a>
+            </li>
+        }
+
+        @if (currentPage < totalPages)
+        {
+            <li class="page-item">
+                <a class="page-link" href="?page=@(currentPage + 1)">Next</a>
+            </li>
+        }
+    </ul>
+</nav>

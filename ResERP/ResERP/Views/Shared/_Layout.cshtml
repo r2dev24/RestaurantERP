@@ -28,8 +28,8 @@
                                 @*If user role is admin, show link or not!*@
                                 @if (User.FindFirst("Role").Value == "Admin")
                                 {
-                                    <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Main" asp-action="AddNewUser">Add New User</a></li>
                                     <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Main" asp-action="UserList">User List</a></li>
+                                    <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Main" asp-action="AddNewUser">Add New User</a></li>
                                 }
                             </ul>
                         </li>

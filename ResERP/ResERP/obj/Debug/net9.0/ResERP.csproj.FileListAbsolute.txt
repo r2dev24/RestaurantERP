@@ -141,7 +141,6 @@ C:\Projects\ResERP\ResERP\obj\Debug\net9.0\scopedcss\bundle\ResERP.styles.css
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\scopedcss\projectbundle\ResERP.bundle.scp.css
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\compressed\aghztwr81n-b9sayid5wm.gz
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\compressed\08a03yj2ho-61n19gt1b8.gz
-C:\Projects\ResERP\ResERP\obj\Debug\net9.0\compressed\tcq4mn9bk2-xtxxf3hu2r.gz
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\compressed\hqgv6yjicq-bqjiyaj88i.gz
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\compressed\56sqg3451p-c2jlpeoesf.gz
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\compressed\ibs5mk81sb-erw9l3u2r3.gz
@@ -219,3 +218,4 @@ C:\Projects\ResERP\ResERP\obj\Debug\net9.0\refint\ResERP.dll
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\ResERP.pdb
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\ResERP.genruntimeconfig.cache
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\ref\ResERP.dll
+C:\Projects\reserp\ResERP\obj\Debug\net9.0\compressed\tcq4mn9bk2-xtxxf3hu2r.gz
