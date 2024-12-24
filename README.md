@@ -2,6 +2,13 @@
 
 ##Development History
 
+## Dec 25, 2024<br>
+#### Delete Functionality:
+
+* Implemented logic to delete a user based on their email.
+* Used FirstOrDefaultAsync to fetch and delete user data.
+* Redirected to the User List after successful deletion.
+
 ## Dec 24, 2024<br>
 ### SignIn View
 * Public Access: Home/Index
