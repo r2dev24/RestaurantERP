@@ -33,6 +33,7 @@ namespace ResERP.Controllers
             return View();
         }
 
+        [HttpGet]
         public async Task<IActionResult> UserList(int page = 1, int pageSize = 10)
         {
             var totalUsers = await _context.Accounts.CountAsync();
@@ -68,6 +69,22 @@ namespace ResERP.Controllers
             ViewData["TotalPages"] = (int)Math.Ceiling(totalUsers / (double)pageSize);
 
             return View(UserList);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> DeleteUser(string email)
+        {
+            var user = await _context.Accounts.FirstOrDefaultAsync(u => u.AccountEmail == email);
+
+            if ( user == null)
+            {
+                return NotFound();
+            }
+            _context.Accounts.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("UserList");
+
         }
     }
 }
