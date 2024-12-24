@@ -1,12 +1,22 @@
 # RestaurantERP - Development
 
-Development History
+##Development History
 
-* Dec 24, 2024<br>
-  1) SignIn View
-      * View: Home/Index, Main/Index(Authorized user only)
-      * Controller: Home / Main (View controller), AuthController(Sign In, Sign Out)
-      * Using Claim for user authentication and session
-
-  2) Add New User View (Under the Setting link)
-      * Frontend (Design) and Backend (Database Handling) tasks were carried out simultaneously to build a feature allowing users to add new accounts. The code has been progressively improved with a focus on efficiency and security.
+## Dec 24, 2024<br>
+### SignIn View
+* Public Access: Home/Index
+* Authorized Users Only: Main/Index
+* Authentication: Managed using claims
+* Controllers:
+* Home and Main: View controllers
+* AuthController: Handles sign-in and sign-out
+### ERP User Management
+* Features:
+  * Displays user roles, email, full name, and contact details in a Bootstrap-styled table
+  * Includes Delete and Detail buttons for each user
+  * Dynamic role display using a switch statement
+  * Pagination for large datasets with Bootstrap design
+* Data Integration:
+  * Combines Account, Personal, and Address data for efficient management
+### Planned Enhancements
+  * Add functionalities for Delete, Detail, Search, and Filtering.
