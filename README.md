@@ -1,6 +1,4 @@
-# RestaurantERP - Development
-
-##Development History
+# RestaurantERP - Development | C#, ASP.NET Core MVC, SQL Server
 
 ## Dec 25, 2024<br>
 #### Delete Functionality:
