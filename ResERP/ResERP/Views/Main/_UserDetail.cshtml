@@ -1,0 +1,83 @@
+﻿@model NewUserViewModel
+
+<div class="modal-header">
+    <h5 class="modal-title fs-2 fw-bold" id="modalTitle">
+        @Model.FullName 
+        <span class="fs-4">
+            (
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                    <path d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23" />
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                </svg>
+                @Model.DateBirth.ToString("yyyy-mm-dd")
+                |
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+                @Model.PhoneNumber
+            )
+        </span>
+
+     </h5>
+
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    @* Row 1 *@
+    <div class="row">
+        @* Role Column *@
+        <div class="col-1 text-center">
+            <span class="fw-bold">Role</span>
+        </div>
+        <div class="col-2">
+            @switch (Model.RoleID)
+            {
+                case 1:
+                    <span>IT Admin</span>
+                    ; break;
+                case 2:
+                    <span>Admin</span>
+                    ; break;
+                case 3:
+                    <span>Manager</span>
+                    ; break;
+                case 4:
+                    <span>Employee</span>
+                    ; break;
+                default:
+                    <span>Unknown</span>
+                    ; break;
+            }
+        </div>
+        @* Email Column *@
+        <div class="col-2 text-center">
+            <span class="fw-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                </svg>
+                Email
+            </span>
+        </div>
+        <div class="col-2">
+            @Model.AccountEmail
+        </div>
+    </div>
+
+    @* Row 2 *@
+    <div class="row mt-5">
+        @* Address *@
+        <div class="col-2">
+            <span class="fw-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg>
+                Address
+            </span>
+        </div>
+        <div class="col-10">
+            <span class="">
+               @Model.StreetNumber @Model.StreetAddress @Model.City, @Model.Province @Model.Country @Model.PostalCode
+            </span>
+        </div>
+    </div>
+</div>

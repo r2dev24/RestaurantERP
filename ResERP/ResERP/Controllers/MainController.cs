@@ -84,7 +84,53 @@ namespace ResERP.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("UserList");
-
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetUserDetail(string email)
+        {
+            //Get User Account
+            var account = await _context.Accounts.FirstOrDefaultAsync(a => a.AccountEmail == email);
+            //Get User Information
+            var user = await _context.Personal.FirstOrDefaultAsync(p => p.AccountID == account.AccountID);
+            //Get User Address
+            var addr = await _context.Address.FirstOrDefaultAsync(d => d.PersonalID == user.PersonalID);
+
+            //Swtich error controll
+            switch ((account, user, addr))
+            {
+                case (null, _, _):
+                    Console.WriteLine("Cannot find user account information");
+                    break;
+                case (_, null, _):
+                    Console.WriteLine("Cannot find user information");
+                    break;
+                case (_, _, null):
+                    Console.WriteLine("Cannot find user address");
+                    break;
+                default:
+                    Console.WriteLine("All information is available.");
+                    break;
+            }
+
+            //Add To View Model
+            var UserInfo = new NewUserViewModel
+            {
+                AccountEmail = account.AccountEmail,
+                RoleID = account.RoleID,
+                FullName = user.FullName,
+                DateBirth = user.DateBirth,
+                PhoneNumber = user.PhoneNumber,
+                StreetNumber = addr.StreetNumber,
+                StreetAddress = addr.StreetAddress,
+                City = addr.City,
+                Province = addr.Province,
+                Country = addr.Country,
+                PostalCode = addr.PostalCode
+            };
+
+            return PartialView("_UserDetail", UserInfo);
+        }
+
     }
 }

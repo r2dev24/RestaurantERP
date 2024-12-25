@@ -47,8 +47,18 @@
                     <td class="text-center" style="width: 15%; border-right: 1px solid black;">@user.PhoneNumber</td>
                     @* Action Buttons *@
                     <td class="text-center" style="width: 30%; border-right: 1px solid black;">
+                        @*Delete User Button *@
                         <a asp-controller="Main" asp-action="DeleteUser" asp-route-email="@user.AccountEmail" class="btn btn-danger me-4" style="width: 150px;">Delete</a>
-                        <button class="btn btn-dark" style="width: 150px;">Detail</button>
+                        @*Show User Detail *@
+                        <button class="btn btn-dark detail-button"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#centeredModal"
+                                data-email="@user.AccountEmail"
+                                style="width: 150px;">
+                            Detail
+                        </button>
+
                     </td>
                 </tr>
             }
@@ -80,4 +90,20 @@
             </li>
         }
     </ul>
+
+    <!-- Modal -->
+    <div class="modal fade" id="centeredModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div id="modalContent">
+                    <!-- Ajax를 통해 데이터를 로드 -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </nav>
