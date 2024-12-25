@@ -1,5 +1,20 @@
 # RestaurantERP - Development | C#, ASP.NET Core MVC, SQL Server
 
+## Dec 26, 2024<br>
+* Detail Button Update:<br>
+  - Added data-email attribute to pass each user's email.<br>
+  - Configured Ajax requests for server communication.<br>
+  
+* Ajax Request with JavaScript:<br>
+  - Used fetch to retrieve Partial View data from the server when the Detail button is clicked.
+  - Dynamically inserted the received data into the Modal content.
+     
+* Controller Implementation:
+  - Created the GetUserDetail action to fetch user data by email and return a Partial View.
+    
+* Partial View Creation:
+  - Designed _UserDetail.cshtml to display user details such as name, email, and contact information.
+    
 ## Dec 25, 2024<br>
 #### Delete Functionality:
 
