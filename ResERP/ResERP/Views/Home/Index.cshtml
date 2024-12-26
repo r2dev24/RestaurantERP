@@ -31,10 +31,11 @@
                     <input asp-for="AccountPassword" type="password" class="form-control" placeholder="Enter your password">
                 </div>
 
+                @* If user data in Modelsate, move to main view*@
                 @if (!ViewData.ModelState.IsValid)
                 {
                     <div class="alert alert-danger">
-                        @Html.ValidationSummary(true, "Please fix the following errors:")
+                        @Html.ValidationSummary(true, "")
                     </div>
                 }
 

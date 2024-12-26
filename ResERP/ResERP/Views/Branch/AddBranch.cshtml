@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Add New Branch | ERP";
+}
+
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5">
+    @*Page Title*@
+    <h1 class="text-white fw-bold mb-5">Add New Branch</h1>
+    <div class="container-fluid w-50">
+        <form method="post">
+            @*Row 1*@
+            <div class="row">
+                @*Role Selector*@
+                   <div class="col-12">
+                        <div class="mb-3">
+                            <label class="text-white mb-2 fs-5">Branch Name</label>
+                            <input class="form-control" type="text" placeholder="Enter new branch name">
+                        </div>
+                    </div>
+            </div>
+
+            @*Row 2*@
+            <div class="row">
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Street Number</label>
+                        <input class="form-control" type="text" placeholder="Enter street number" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-4">
+                        <label class="text-white mb-2 fs-5">Street Address</label>
+                        <input class="form-control" type="text" placeholder="Enter street address" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

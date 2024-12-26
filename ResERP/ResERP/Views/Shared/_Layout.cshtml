@@ -16,12 +16,37 @@
                 @*Left Side: Logo, Navbar*@
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand fw-bold fs-2" asp-controller="Main" asp-action="Index">RES ERP</a>
-                    <ul class="navbar-nav ms-3">
+                    <ul class="navbar-nav ms-3 gap-3">
+                        @* Home Nav *@
                         <li class="nav-item">
                             <a class="nav-link text-white fs-4" asp-controller="Main" asp-action="Index">Home</a>
                         </li>
+
+                        @*Branch Nav *@
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-white fs-4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Branch
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Branch" asp-action="Index">Dashboard</a></li>
+                                <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Branch" asp-action="AddBranch">Add New Branch</a></li>
+                            </ul>
+                        </li>
+
+                        @*Employee Nav *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fs-4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Employee
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Main" asp-action="Employee">Dashboard</a></li>
+                                <li><a class="dropdown-item text-white bg-dark" style="height: 50px; line-height: 50px;" asp-controller="Employee" asp-action="AddEmployee">Add New Employee</a></li>
+                            </ul>
+                        </li>
+
+                        @* Settings Nav *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fs-4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Setting
                             </a>
                             <ul class="dropdown-menu bg-dark">

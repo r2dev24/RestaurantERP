@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "User List | ERP";
 
+    @* Page Control *@
     var currentPage = (int)ViewData["CurrentPage"];
     var totalPages = (int)ViewData["TotalPages"];
 }
@@ -11,6 +12,7 @@
 <div class="d-flex justify-content-center mt-5 p-5">
     <table class="table">
         <thead>
+            @* Table Head *@
             <tr class="table-secondary text-center">
                 <th style="width: 10%; border-right: 1px solid black;">Role</th>
                 <th style="width: 25%; border-right: 1px solid black;">Email</th>
@@ -20,6 +22,7 @@
             </tr>
         </thead>
         <tbody>
+            @* User Role *@
             @foreach (var user in Model)
             {
                 <tr class="align-middle">
@@ -96,7 +99,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div id="modalContent">
-                    <!-- Ajax를 통해 데이터를 로드 -->
+                    <!-- Load data by Ajax -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

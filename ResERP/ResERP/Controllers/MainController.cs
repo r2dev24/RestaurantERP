@@ -17,11 +17,13 @@ namespace ResERP.Controllers
             _context = context;
         }
 
+        //Home view
         public IActionResult Index()
         {
             return View();
         }
 
+        //Add User
         public IActionResult AddNewUser()
         {
             //Get Role Names
@@ -33,6 +35,13 @@ namespace ResERP.Controllers
             return View();
         }
 
+        //Employee Main View
+        public IActionResult Employee()
+        {
+            return View();
+        }
+
+        //User List View
         [HttpGet]
         public async Task<IActionResult> UserList(int page = 1, int pageSize = 10)
         {
@@ -86,6 +95,7 @@ namespace ResERP.Controllers
             return RedirectToAction("UserList");
         }
 
+        //User Detail Partial View
         [HttpGet]
         public async Task<IActionResult> GetUserDetail(string email)
         {
@@ -96,7 +106,7 @@ namespace ResERP.Controllers
             //Get User Address
             var addr = await _context.Address.FirstOrDefaultAsync(d => d.PersonalID == user.PersonalID);
 
-            //Swtich error controll
+            //Swtich error control
             switch ((account, user, addr))
             {
                 case (null, _, _):
@@ -131,6 +141,5 @@ namespace ResERP.Controllers
 
             return PartialView("_UserDetail", UserInfo);
         }
-
     }
 }
