@@ -1,4 +1,7 @@
-﻿@{
+﻿@using ResERP.Models.ViewModels
+@model BranchAddressViewModel
+
+@{
     ViewData["Title"] = "Add New Branch | ERP";
 }
 
@@ -6,14 +9,14 @@
     @*Page Title*@
     <h1 class="text-white fw-bold mb-5">Add New Branch</h1>
     <div class="container-fluid w-50">
-        <form method="post">
+        <form asp-controller="Branch" asp-action="AddNewBranch" method="post">
             @*Row 1*@
             <div class="row">
                 @*Role Selector*@
                    <div class="col-12">
                         <div class="mb-3">
                             <label class="text-white mb-2 fs-5">Branch Name</label>
-                            <input class="form-control" type="text" placeholder="Enter new branch name">
+                            <input asp-for="BranchName" class="form-control" type="text" placeholder="Enter new branch name">
                         </div>
                     </div>
             </div>
@@ -23,15 +26,57 @@
                 <div class="col-3">
                     <div class="mb-3">
                         <label class="text-white mb-2 fs-5">Street Number</label>
-                        <input class="form-control" type="text" placeholder="Enter street number" />
+                        <input asp-for="StreetNumber" class="form-control" type="text" placeholder="Enter street number" />
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label class="text-white mb-2 fs-5">Street Address</label>
-                        <input class="form-control" type="text" placeholder="Enter street address" />
+                        <input asp-for="StreetAddress" class="form-control" type="text" placeholder="Enter street address" />
                     </div>
                 </div>
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">City</label>
+                        <input asp-for="City" class="form-control" type="text" placeholder="Enter city name" />
+                    </div>
+                </div>
+            </div>
+
+            @* Row 3 *@
+            <div class="row">
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Province</label>
+                        <input asp-for="Province" class="form-control" type="text" placeholder="Enter province" />
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Postal Code</label>
+                        <input asp-for="PostalCode" class="form-control" type="text" placeholder="Enter postal code" />
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label class="text-white mb-2 fs-5">Country</label>
+                        <select asp-for="Country" class="form-select form-select mb-3" aria-label="Large select example">
+                            <option value="" selected>Select Country</option>
+                            <option value="CA">Canada</option>
+                            <option value="US">United States of America</option>
+                            <option value="KR">Korea, Republic Of</option>
+                            <option value="CN">China</option>
+                            <option value="IN">India</option>
+                            <option value="JP">Japan</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-5 gap-4">
+                <button type="reset" class="btn btn-outline-danger btn-lg" style="width: 250px;">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 250px;">Submit</button>
             </div>
         </form>
     </div>

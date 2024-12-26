@@ -1,3 +1,109 @@
-﻿@{
+﻿@using ResERP.Models.ViewModels
+@model BranchMemberViewModel
+
+@{
     ViewData["Title"] = "Add New Employee | ERP";
+
+    // ViewData
+    var storeList = ViewData["StoreList"] as List<Branch>;
+    var roleList = ViewData["RoleList"] as List<BranchRole>;
 }
+
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5">
+    @* Page Title *@
+    <h1 class="text-white fw-bold mb-5">Add New Member</h1>
+
+    @* Main Container *@
+    <div class="container-fluid w-50">
+        @* Form Start *@
+        <form asp-controller="Employee" asp-action="AddNewMember" method="post">
+            @* Row 1 branch and roles *@
+            <div class="row">
+                @* Branches *@
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Branches</label>
+                    <select asp-for="BranchName" class="form-select form-select mb-3" aria-label="Large select example">
+                        <option value="" selected>Select Branch</option>
+                        @foreach(var stores in storeList) {
+                            <option value="@stores.BranchName">@stores.BranchName</option>
+                        }
+                    </select>
+                </div>
+
+                @* Role List *@
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Roles</label>
+                    <select asp-for="RoleName" class="form-select form-select mb-3" aria-label="Large select example">
+                        <option value="" selected>Select Role</option>
+                        @foreach (var roles in roleList)
+                        {
+                            <option value="@roles.RoleName">@roles.RoleName</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            @*Row 2 - Member Information *@
+            <div class="row mt-5">
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Full Name</label>
+                    <input asp-for="FullName" type="text" class="form-control" placeholder="Enter branch member name" />
+                </div>
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Birth Date</label>
+                    <input asp-for="DateBirth" type="date" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Contact Number</label>
+                    <input asp-for="PhoneNumber" type="text" class="form-control" placeholder="Enter branch member contact number" />
+                </div>
+            </div>
+
+            @* Row 3 - Member Address *@
+            <div class="row mt-5">
+                <div class="col-3">
+                    <label class="text-white mb-2 fs-5">Street Number</label>
+                    <input asp-for="StreetNumber" type="text" class="form-control" placeholder="Enter street number" />
+                </div>
+                <div class="col-6">
+                    <label class="text-white mb-2 fs-5">Street Number</label>
+                    <input asp-for="StreetAddress" type="text" class="form-control" placeholder="Enter street address" />
+                </div>
+                <div class="col-3">
+                    <label class="text-white mb-2 fs-5">City</label>
+                    <input asp-for="City" type="text" class="form-control" placeholder="Enter city name" />
+                </div>
+            </div>
+
+            @* Row 4 - Member Address *@
+            <div class="row mt-3">
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Province</label>
+                    <input asp-for="Province" type="text" class="form-control" placeholder="Enter province name" />
+                </div>
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Postal Code</label>
+                    <input asp-for="PostalCode" type="text" class="form-control" placeholder="Enter postal code" />
+                </div>
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Country</label>
+                    <select asp-for="Country" class="form-select form-select mb-3" aria-label="Large select example">
+                        <option value="" selected>Select Country</option>
+                        <option value="CA">Canada</option>
+                        <option value="US">United States of America</option>
+                        <option value="KR">Korea, Republic Of</option>
+                        <option value="CN">China</option>
+                        <option value="IN">India</option>
+                        <option value="JP">Japan</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-4" style="margin-top: 100px;">
+                <button type="reset" class="btn btn-outline-danger btn-lg" style="width: 250px;">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 250px;">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

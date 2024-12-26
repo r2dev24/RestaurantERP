@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\ResERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\ResERP\\ResERP\\Migrations\\20241226014203_20241226-4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ResERP\\Migrations\\20241226014203_20241226-4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\main\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\main\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\employee\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\employee\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\branch\\addbranch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\branch\\addbranch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 856,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241226014203_20241226-4.cs",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Migrations\\20241226014203_20241226-4.cs",
-              "RelativeDocumentMoniker": "ResERP\\Migrations\\20241226014203_20241226-4.cs",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Migrations\\20241226014203_20241226-4.cs",
-              "RelativeToolTip": "ResERP\\Migrations\\20241226014203_20241226-4.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T01:42:03.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddNewUser.cshtml",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Main\\AddNewUser.cshtml",
-              "RelativeDocumentMoniker": "ResERP\\Views\\Main\\AddNewUser.cshtml",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Main\\AddNewUser.cshtml",
-              "RelativeToolTip": "ResERP\\Views\\Main\\AddNewUser.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Title": "AddEmployee.cshtml",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Employee\\AddEmployee.cshtml",
+              "RelativeDocumentMoniker": "ResERP\\Views\\Employee\\AddEmployee.cshtml",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Employee\\AddEmployee.cshtml",
+              "RelativeToolTip": "ResERP\\Views\\Employee\\AddEmployee.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAxwGwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T01:28:42.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddBranch.cshtml",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Branch\\AddBranch.cshtml",
-              "RelativeDocumentMoniker": "ResERP\\Views\\Branch\\AddBranch.cshtml",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Branch\\AddBranch.cshtml",
-              "RelativeToolTip": "ResERP\\Views\\Branch\\AddBranch.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T01:26:09.505Z",
+              "WhenOpened": "2024-12-26T17:34:37.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "ResERP\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "ResERP\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T17:34:36.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ResERP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ResERP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T17:33:03.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "ResERP\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "ResERP\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAxwHIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T17:33:31.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BranchController.cs",
               "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\BranchController.cs",
               "RelativeDocumentMoniker": "ResERP\\Controllers\\BranchController.cs",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\BranchController.cs",
               "RelativeToolTip": "ResERP\\Controllers\\BranchController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T01:25:17.095Z",
+              "WhenOpened": "2024-12-26T04:46:56.7Z",
               "EditorCaption": ""
             }
           ]
