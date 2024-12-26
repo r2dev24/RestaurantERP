@@ -15,6 +15,21 @@
     
 * Partial View Creation:
   - Designed _UserDetail.cshtml to display user details such as name, email, and contact information.
+
+* Database Design
+  - Designed tables for Branch and BranchAddress with proper relationships.
+
+* Controller Implementation
+  - Created BranchController and implemented the AddNewBranch action.
+  - Fetched the logged-in user's account via email and saved branch data.
+
+* Razor View
+  - Built the AddBranch view with a form for branch creation.
+  - Used asp-for with Bootstrap for UI and validation.
+
+* Problem Solved
+  - Logged errors for validation failures.
+  - Fixed issues related to foreign key relationships and data saving.
     
 ## Dec 25, 2024<br>
 #### Delete Functionality:
