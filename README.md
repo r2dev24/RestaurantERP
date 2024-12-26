@@ -5,6 +5,21 @@
 
 ## Development Progress
 
+### Dec 27, 2024
+
+1. View (Add New Employee Form)
+   - Form Creation: Created a form to input branch, role, and employee information.
+
+2. Dropdown Lists:
+   - Populated the dropdown lists with branch and role data from the database.
+
+3. Controller (EmployeeController)
+   - Index: Returns the main view.
+   - AddEmployee: Fetches branch and role lists from the database and passes them to the view.
+   - AddNewMember: Validates form data, then saves the new employee and their address and role information to the database.
+
+---
+
 ### Dec 26, 2024
 #### Features Added
 1. **Detail Button Update**
