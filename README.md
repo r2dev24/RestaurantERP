@@ -1,4 +1,5 @@
 # RestaurantERP - Development | C#, ASP.NET Core MVC, SQL Server
+<img src="https://github.com/r2dev24/RestaurantERP/blob/main/Blank%20diagram.png">
 
 ## Dec 26, 2024<br>
 * Detail Button Update:<br>
