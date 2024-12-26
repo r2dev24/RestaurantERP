@@ -1,4 +1,4 @@
-# RestaurantERP - Development | <img src="https://img.shields.io/badge/C%23-Developer-blue?style=flat-square&logo=c-sharp" alt="C#"> <img src="https://img.shields.io/badge/.NET-Core_Framework-blueviolet?style=flat-square&logo=dotnet" alt=".NET"> <img src="https://img.shields.io/badge/SQL%20Server-Database-red?style=flat-square&logo=microsoft-sql-server" alt="SQL Server"> 
+# RestaurantERP - Development <img src="https://img.shields.io/badge/C%23-Developer-blue?style=flat-square&logo=c-sharp" alt="C#"> <img src="https://img.shields.io/badge/.NET-Core_Framework-blueviolet?style=flat-square&logo=dotnet" alt=".NET"> <img src="https://img.shields.io/badge/SQL%20Server-Database-red?style=flat-square&logo=microsoft-sql-server" alt="SQL Server"> 
 
 
 <img src="https://github.com/r2dev24/RestaurantERP/blob/main/Blank%20diagram.png">
