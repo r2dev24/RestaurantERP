@@ -3,6 +3,9 @@
 
 @{
     ViewData["Title"] = "Employee List | ERP";
+    @* Page Control *@
+    var currentPage = ViewData["CurrentPage"] as int? ?? 1;
+    var totalPages = ViewData["TotalPages"] as int? ?? 1;
 }
 
 <div class="d-flex justify-content-center mt-5 p-5">
@@ -32,10 +35,11 @@
                         @*Delete User Button *@
                         <a class="btn btn-danger me-4" style="width: 150px;">Delete</a>
                         @*Show User Detail *@
-                        <button class="btn btn-dark detail-button"
+                        <button class="btn btn-dark employee-detail-button"
                                 type="button"
                                 data-bs-toggle="modal"
-                                data-bs-target="#centeredModal"
+                                data-bs-target="#employeeDetailModal"
+                                data-id="@user.MemberID"
                                 style="width: 150px;">
                             Detail
                         </button>
@@ -46,3 +50,41 @@
         </tbody>
     </table>
 </div>
+
+<div class="d-flex justify-content-center">
+    <nav>
+        <ul class="pagination">
+            @if (currentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("EmployeeList", new { page = currentPage - 1 })">Previous</a>
+                </li>
+            }
+
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("EmployeeList", new { page = i })">@i</a>
+                </li>
+            }
+
+            @if (currentPage < totalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("EmployeeList", new { page = currentPage + 1 })">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+
+<!-- Employee Detail Modal -->
+<div class="modal fade" id="employeeDetailModal" tabindex="-1" aria-labelledby="employeeDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Content will be dynamically loaded here -->
+            <p>Loading...</p>
+        </div>
+    </div>
+</div>
+

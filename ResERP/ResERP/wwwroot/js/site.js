@@ -30,3 +30,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Define Employee Detail Buttons
+    const empDetailButtons = document.querySelectorAll('.employee-detail-button');
+
+    empDetailButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Get member id from data-id attribute
+            const memberID = this.getAttribute('data-id');
+
+            // Fetch Partial View from server
+            fetch(`/Employee/GetEmployeeDetail?id=${memberID}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text(); // Return response as text (HTML)
+                })
+                .then(html => {
+                    // Update Modal Content
+                    document.querySelector('#employeeDetailModal .modal-content').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        });
+    });
+});

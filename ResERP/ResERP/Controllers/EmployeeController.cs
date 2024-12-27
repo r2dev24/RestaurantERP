@@ -64,6 +64,7 @@ namespace ResERP.Controllers
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> AddNewMember(BranchMemberViewModel model)
         {
             //Mdoel State
@@ -146,9 +147,9 @@ namespace ResERP.Controllers
         }
 
         //Employee List View
-        public async Task<IActionResult> EmployeeList()
+        [HttpGet]
+        public async Task<IActionResult> EmployeeList(int page = 1, int pageSize = 10)
         {
-            //Get Data From DB
             var members = await _context.BranchMembers.ToListAsync();
             var memberRoles = await _context.MemberRoles.ToListAsync();
             var addresses = await _context.MemberAddresses.ToListAsync();
@@ -157,7 +158,7 @@ namespace ResERP.Controllers
 
             var list = new List<BranchMemberViewModel>();
 
-            foreach ( var m in members)
+            foreach (var m in members)
             {
                 var memberAddress = addresses.FirstOrDefault(a => a.MemberID == m.MemberID);
                 var memberRole = memberRoles.Where(mr => mr.MemberID == m.MemberID);
@@ -171,23 +172,64 @@ namespace ResERP.Controllers
                     {
                         list.Add(new BranchMemberViewModel
                         {
+                            MemberID = m.MemberID,
                             FullName = m.FullName,
                             DateBirth = m.DateBirth,
                             PhoneNumber = m.PhoneNumber,
                             RoleName = role.RoleName,
-                            BranchName = memberBranch.BranchName,
-                            StreetNumber = memberAddress.StreetNumber,
-                            StreetAddress = memberAddress.StreetAddress,
-                            City = memberAddress.City,
-                            Province = memberAddress.Province,
-                            Country = memberAddress.Country,
-                            PostalCode = memberAddress.PostalCode,
+                            BranchName = memberBranch?.BranchName ?? "Unknown",
+                            StreetNumber = memberAddress?.StreetNumber ?? "N/A",
+                            StreetAddress = memberAddress?.StreetAddress ?? "N/A",
+                            City = memberAddress?.City ?? "N/A",
+                            Province = memberAddress?.Province ?? "N/A",
+                            Country = memberAddress?.Country ?? "N/A",
+                            PostalCode = memberAddress?.PostalCode ?? "N/A",
                         });
                     }
                 }
             }
 
-            return View(list);
+            int totalCount = list.Count;
+
+            var paginatedList = list
+                .Skip((page - 1) * pageSize) 
+                .Take(pageSize)   
+                .ToList();
+
+            int totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = totalPages;
+
+            return View(paginatedList);
+        }
+
+        //Get Employee Detail
+        [HttpGet]
+        public async Task<IActionResult> GetEmployeeDetail(int id)
+        {
+            var member = await _context.BranchMembers.FirstOrDefaultAsync(m => m.MemberID == id);
+            var address = await _context.MemberAddresses.FirstOrDefaultAsync(a => a.MemberID == id);
+            var role = await _context.MemberRoles.FirstOrDefaultAsync(r => r.MemberID == id);
+            var getRole = await _context.BranchRoles.FirstOrDefaultAsync(gr => gr.RoleID == role.RoleID);
+            var branch = await _context.Branches.FirstOrDefaultAsync(b => b.BranchID == member.BranchID);
+
+            var details = new BranchMemberViewModel
+            {
+                FullName = member.FullName,
+                RoleName = getRole.RoleName,
+                DateBirth = member.DateBirth,
+                PhoneNumber = member.PhoneNumber,
+                StreetNumber =  address.StreetNumber,
+                StreetAddress = address.StreetAddress,
+                City = address.City,
+                Province = address.Province,
+                PostalCode = address.PostalCode,
+                Country = address.Country,
+                BranchName = branch.BranchName,
+            };
+
+            return PartialView("_EmpDetail", details);
         }
 
     }

@@ -6,6 +6,9 @@ namespace ResERP.Models.ViewModels
     public class BranchMemberViewModel
     {
         [Required]
+        public int MemberID { get; set; }
+
+        [Required]
         public string FullName { get; set; }
 
         [Required]

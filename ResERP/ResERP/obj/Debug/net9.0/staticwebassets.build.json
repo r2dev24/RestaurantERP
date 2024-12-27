@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dOS+JAOiHEPneJi2+J4xHOFEKOHtIfsowZv7vo/HQTU=",
+  "Hash": "YkEuRFm4ZBU1cK9ezOPkXCTen24kKHrh6fKVv1qjLoM=",
   "Source": "ResERP",
   "BasePath": "_content/ResERP",
   "Mode": "Default",
@@ -1088,12 +1088,12 @@
       "OriginalItemSpec": "C:\\Projects\\reserp\\ResERP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-57j5ahu59s.gz",
+      "Identity": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-yjn5hk3c08.gz",
       "SourceId": "ResERP",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ResERP",
-      "RelativePath": "js/site#[.{fingerprint=57j5ahu59s}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=yjn5hk3c08}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1102,8 +1102,8 @@
       "RelatedAsset": "C:\\Projects\\reserp\\ResERP\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "kfplmg864m",
-      "Integrity": "AHb4GHn69AzX1JdEwtWSV6ByRuQTceRM3MvGSe6qv+E=",
+      "Fingerprint": "gy7y9gznsg",
+      "Integrity": "yDWcaVOUXjBQ9xRXZx4djENaioZDHjb1epIxoULlZfA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projects\\reserp\\ResERP\\wwwroot\\js\\site.js"
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "57j5ahu59s",
-      "Integrity": "j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8=",
+      "Fingerprint": "yjn5hk3c08",
+      "Integrity": "gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -3324,13 +3324,13 @@
       ]
     },
     {
-      "Route": "js/site.57j5ahu59s.js",
-      "AssetFile": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-57j5ahu59s.gz",
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-yjn5hk3c08.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001724137931"
+          "Quality": "0.001356852103"
         }
       ],
       "ResponseHeaders": [
@@ -3340,19 +3340,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "579"
+          "Value": "736"
         },
         {
           "Name": "ETag",
-          "Value": "\"AHb4GHn69AzX1JdEwtWSV6ByRuQTceRM3MvGSe6qv+E=\""
+          "Value": "\"yDWcaVOUXjBQ9xRXZx4djENaioZDHjb1epIxoULlZfA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:17:39 GMT"
+          "Value": "Fri, 27 Dec 2024 23:04:51 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3368,26 +3368,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8=\""
+          "Value": "W/\"gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "57j5ahu59s"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8="
+          "Value": "sha256-gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao="
         }
       ]
     },
     {
-      "Route": "js/site.57j5ahu59s.js",
+      "Route": "js/site.js",
       "AssetFile": "C:\\Projects\\reserp\\ResERP\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3397,7 +3389,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1225"
+          "Value": "2377"
         },
         {
           "Name": "Content-Type",
@@ -3405,11 +3397,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8=\""
+          "Value": "\"gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:17:39 GMT"
+          "Value": "Fri, 27 Dec 2024 23:04:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js.gz",
+      "AssetFile": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-yjn5hk3c08.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDWcaVOUXjBQ9xRXZx4djENaioZDHjb1epIxoULlZfA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 23:04:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yDWcaVOUXjBQ9xRXZx4djENaioZDHjb1epIxoULlZfA="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.yjn5hk3c08.js",
+      "AssetFile": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-yjn5hk3c08.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001356852103"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDWcaVOUXjBQ9xRXZx4djENaioZDHjb1epIxoULlZfA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 23:04:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yjn5hk3c08"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.yjn5hk3c08.js",
+      "AssetFile": "C:\\Projects\\reserp\\ResERP\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2377"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Dec 2024 23:04:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3419,7 +3556,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "57j5ahu59s"
+          "Value": "yjn5hk3c08"
         },
         {
           "Name": "label",
@@ -3427,13 +3564,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8="
+          "Value": "sha256-gkjLAasQBWq+LoZVoY48KpVl9OCn4E42P8oFkK/EPao="
         }
       ]
     },
     {
-      "Route": "js/site.57j5ahu59s.js.gz",
-      "AssetFile": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-57j5ahu59s.gz",
+      "Route": "js/site.yjn5hk3c08.js.gz",
+      "AssetFile": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-yjn5hk3c08.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3442,7 +3579,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "579"
+          "Value": "736"
         },
         {
           "Name": "Content-Type",
@@ -3450,11 +3587,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AHb4GHn69AzX1JdEwtWSV6ByRuQTceRM3MvGSe6qv+E=\""
+          "Value": "\"yDWcaVOUXjBQ9xRXZx4djENaioZDHjb1epIxoULlZfA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:17:39 GMT"
+          "Value": "Fri, 27 Dec 2024 23:04:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3472,7 +3609,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "57j5ahu59s"
+          "Value": "yjn5hk3c08"
         },
         {
           "Name": "label",
@@ -3480,144 +3617,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AHb4GHn69AzX1JdEwtWSV6ByRuQTceRM3MvGSe6qv+E="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-57j5ahu59s.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001724137931"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "579"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AHb4GHn69AzX1JdEwtWSV6ByRuQTceRM3MvGSe6qv+E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:17:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Projects\\reserp\\ResERP\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1225"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:17:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j8HCuGlwfc7tVM02DWjyMAQbDJB6jqjXHWobbHu/kd8="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Projects\\reserp\\ResERP\\obj\\Debug\\net9.0\\compressed\\tcq4mn9bk2-57j5ahu59s.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AHb4GHn69AzX1JdEwtWSV6ByRuQTceRM3MvGSe6qv+E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:17:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AHb4GHn69AzX1JdEwtWSV6ByRuQTceRM3MvGSe6qv+E="
+          "Value": "sha256-yDWcaVOUXjBQ9xRXZx4djENaioZDHjb1epIxoULlZfA="
         }
       ]
     },
