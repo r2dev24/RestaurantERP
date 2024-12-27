@@ -3,7 +3,7 @@
 1. Database Modelling(Last Update: Dec 27, 2024)
 <img src="https://github.com/r2dev24/RestaurantERP/blob/main/Blank%20diagram.png">
 
-## Development Progress
+## Development History
 
 ### Dec 27, 2024
 
