@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ResERP.Data;
 using ResERP.Models;
 using ResERP.Models.ViewModels;
@@ -135,13 +136,58 @@ namespace ResERP.Controllers
                 _context.MemberRoles.Add(memberRole);
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction("Index");
+                return RedirectToAction("EmployeeList");
             }
             catch (Exception ex) 
             {
                 _logger.LogError($"Member Role Error: {ex.ToString()}");
                 return View("AddEmployee", model);
             }
+        }
+
+        //Employee List View
+        public async Task<IActionResult> EmployeeList()
+        {
+            //Get Data From DB
+            var members = await _context.BranchMembers.ToListAsync();
+            var memberRoles = await _context.MemberRoles.ToListAsync();
+            var addresses = await _context.MemberAddresses.ToListAsync();
+            var roles = await _context.BranchRoles.ToListAsync();
+            var branches = await _context.Branches.ToListAsync();
+
+            var list = new List<BranchMemberViewModel>();
+
+            foreach ( var m in members)
+            {
+                var memberAddress = addresses.FirstOrDefault(a => a.MemberID == m.MemberID);
+                var memberRole = memberRoles.Where(mr => mr.MemberID == m.MemberID);
+                var memberBranch = branches.FirstOrDefault(b => b.BranchID == m.BranchID);
+
+                foreach (var mr in memberRole)
+                {
+                    var role = roles.FirstOrDefault(r => r.RoleID == mr.RoleID);
+
+                    if (role != null)
+                    {
+                        list.Add(new BranchMemberViewModel
+                        {
+                            FullName = m.FullName,
+                            DateBirth = m.DateBirth,
+                            PhoneNumber = m.PhoneNumber,
+                            RoleName = role.RoleName,
+                            BranchName = memberBranch.BranchName,
+                            StreetNumber = memberAddress.StreetNumber,
+                            StreetAddress = memberAddress.StreetAddress,
+                            City = memberAddress.City,
+                            Province = memberAddress.Province,
+                            Country = memberAddress.Country,
+                            PostalCode = memberAddress.PostalCode,
+                        });
+                    }
+                }
+            }
+
+            return View(list);
         }
 
     }

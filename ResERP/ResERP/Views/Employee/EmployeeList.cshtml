@@ -1,0 +1,48 @@
+﻿@using ResERP.Models.ViewModels
+@model IEnumerable<BranchMemberViewModel>
+
+@{
+    ViewData["Title"] = "Employee List | ERP";
+}
+
+<div class="d-flex justify-content-center mt-5 p-5">
+    <table class="table">
+        <thead>
+            @* Table Head *@
+            <tr class="table-secondary text-center">
+                <th style="width: 15%; border-right: 1px solid black;">Branch</th>
+                <th style="width: 10%; border-right: 1px solid black;">Role</th>
+                <th style="width: 20%; border-right: 1px solid black;">Name</th>
+                <th style="width: 10%; border-right: 1px solid black;">Birth Date</th>
+                <th style="width: 10%; border-right: 1px solid black;">Contact</th>
+                <th style="width: 35%; border-right: 1px solid black;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @* User Role *@
+            @foreach (var user in Model)
+            {
+                <tr class="align-middle">
+                    <td class="text-center" style="width: 15%; border-right: 1px solid black;">@user.BranchName</td>
+                    <td class="text-center" style="width: 10%; border-right: 1px solid black;">@user.RoleName</td>
+                    <td class="text-center" style="width: 20%; border-right: 1px solid black;">@user.FullName</td>
+                    <td class="text-center" style="width: 10%; border-right: 1px solid black;">@user.DateBirth.ToString("yyyy-MM-dd")</td>
+                    <td class="text-center" style="width: 10%; border-right: 1px solid black;">@user.PhoneNumber</td>
+                    <td class="text-center" style="width: 35%; border-right: 1px solid black;">
+                        @*Delete User Button *@
+                        <a class="btn btn-danger me-4" style="width: 150px;">Delete</a>
+                        @*Show User Detail *@
+                        <button class="btn btn-dark detail-button"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#centeredModal"
+                                style="width: 150px;">
+                            Detail
+                        </button>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
