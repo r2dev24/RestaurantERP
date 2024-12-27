@@ -7,16 +7,28 @@
 
 ### Dec 27, 2024
 
-1. View (Add New Employee Form)
+1. **View (Add New Employee Form)**
    - Form Creation: Created a form to input branch, role, and employee information.
 
-2. Dropdown Lists:
+2. **Dropdown Lists:**
    - Populated the dropdown lists with branch and role data from the database.
 
-3. Controller (EmployeeController)
+3. **Controller (EmployeeController)**
    - Index: Returns the main view.
    - AddEmployee: Fetches branch and role lists from the database and passes them to the view.
    - AddNewMember: Validates form data, then saves the new employee and their address and role information to the database.
+
+Extra Work 
+
+4. **Fetching Data from Database**
+   - Asynchronously fetches data from BranchMembers, MemberRoles, MemberAddresses, BranchRoles, and Branches.
+     
+5. **Combining Data and Creating ViewModel**
+   - Combines address, role, and branch information for each member to create a `BranchMemberViewModel` list.
+     
+6. **Displaying Data in Razor View**
+   - Displays the `BranchMemberViewModel` list in a table format in the Razor view.
+   - Additionally, displays the branch list to show each member's branch information.
 
 ---
 
