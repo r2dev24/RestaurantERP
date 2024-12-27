@@ -5,6 +5,47 @@
 
 ## Development History
 
+### Dec 28, 2024
+1. Employee List View
+   * Displays BranchMemberViewModel data in a structured table format.
+   * Includes columns for:
+      - Branch
+      - Role
+      - Name
+      - Birth Date
+      - Contact
+      - Actions (Detail and Delete buttons).
+        
+2. Detail Modal
+   * A Bootstrap-based modal to display detailed information for a selected employee.
+   * Dynamically updates modal content when the Detail button is clicked.
+     
+3. Dynamic Data Loading
+   * Utilizes the data-id attribute on the Detail button to identify the selected employee.
+   * Uses JavaScript (fetch API) to fetch employee details from the server via a dedicated endpoint (/Employee/GetEmployeeDetail).
+   * Injects the fetched Partial View into the modal dynamically.
+
+4. Partial View Integration
+   * A Partial View (_EmployeeDetailPartial) displays:
+      - Employee Name
+      - Role
+      - Branch
+      - Birth Date
+      - Contact Information
+        
+5. Pagination
+   * Added pagination for the employee list.
+   * Displays:
+      - Page numbers.
+      - Previous/Next buttons.
+   * Maintains proper state using CurrentPage and TotalPages values passed to the view.
+
+6. Bug Fixes
+   * Resolved JavaScript errors related to attribute handling (this.getAttribute).
+   * Corrected missing #modalContent issue by targeting .modal-content for updates.
+
+---
+
 ### Dec 27, 2024
 
 1. **View (Add New Employee Form)**
