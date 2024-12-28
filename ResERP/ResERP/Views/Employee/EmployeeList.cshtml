@@ -33,7 +33,7 @@
                     <td class="text-center" style="width: 10%; border-right: 1px solid black;">@user.PhoneNumber</td>
                     <td class="text-center" style="width: 35%; border-right: 1px solid black;">
                         @*Delete User Button *@
-                        <a class="btn btn-danger me-4" style="width: 150px;">Delete</a>
+                        <a asp-controller="Employee" asp-action="DeleteEmployee" asp-route-id="@user.MemberID" class="btn btn-danger me-4" style="width: 150px;">Delete</a>
                         @*Show User Detail *@
                         <button class="btn btn-dark employee-detail-button"
                                 type="button"

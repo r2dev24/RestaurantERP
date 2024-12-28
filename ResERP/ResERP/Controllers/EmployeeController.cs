@@ -232,5 +232,31 @@ namespace ResERP.Controllers
             return PartialView("_EmpDetail", details);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> DeleteEmployee(int id)
+        {
+            var employee = await _context.BranchMembers.FirstOrDefaultAsync(m => m.MemberID == id);
+
+            if (employee == null)
+            {
+                Console.WriteLine("Cannot find employee information");
+                return RedirectToAction("Index"); // Redirect to list if not found
+            }
+
+            try
+            {
+                _context.BranchMembers.Remove(employee);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("EmployeeList"); // Redirect to EmployeeList after deletion
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error occurred: {ex.Message}");
+                return View("Error"); // Redirect to an error page
+            }
+        }
+
+
     }
 }
