@@ -72,14 +72,6 @@
      - Redirects immediately if the employee record is `null`.
      - Handles exceptions gracefully, logging detailed error messages for debugging.
 
----
-
-### Code Implementation
-
-#### Razor View: `Delete` Button
-```html
-<a asp-controller="Employee" asp-action="DeleteEmployee" asp-route-id="@user.MemberID" class="btn btn-danger me-4" style="width: 150px;">Delete</a>
-
 
 ---
 
