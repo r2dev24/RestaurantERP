@@ -6,7 +6,7 @@
 ## Development History
 
 ### Dec 28, 2024
-1. Employee List View
+1. **Employee List View**
    * Displays BranchMemberViewModel data in a structured table format.
    * Includes columns for:
       - Branch
@@ -16,16 +16,16 @@
       - Contact
       - Actions (Detail and Delete buttons).
         
-2. Detail Modal
+2. **Detail Modal**
    * A Bootstrap-based modal to display detailed information for a selected employee.
    * Dynamically updates modal content when the Detail button is clicked.
      
-3. Dynamic Data Loading
+3. **Dynamic Data Loading**
    * Utilizes the data-id attribute on the Detail button to identify the selected employee.
    * Uses JavaScript (fetch API) to fetch employee details from the server via a dedicated endpoint (/Employee/GetEmployeeDetail).
    * Injects the fetched Partial View into the modal dynamically.
 
-4. Partial View Integration
+4. **Partial View Integration**
    * A Partial View (_EmployeeDetailPartial) displays:
       - Employee Name
       - Role
@@ -33,16 +33,53 @@
       - Birth Date
       - Contact Information
         
-5. Pagination
+5. **Pagination**
    * Added pagination for the employee list.
    * Displays:
       - Page numbers.
       - Previous/Next buttons.
    * Maintains proper state using CurrentPage and TotalPages values passed to the view.
 
-6. Bug Fixes
+6. **Bug Fixes**
    * Resolved JavaScript errors related to attribute handling (this.getAttribute).
    * Corrected missing #modalContent issue by targeting .modal-content for updates.
+
+
+7. **Delete Button Update**
+   - Updated the `Delete` button in the Razor View:
+     - Replaced `asp-route-email` with `asp-route-id` to correctly pass the `MemberID` to the controller.
+
+8. **Controller Logic Enhancement**
+   - **`DeleteEmployee` Method**:
+     - Searches for the employee using the provided `MemberID`.
+     - Handles the following scenarios:
+       - If the employee record does not exist:
+         - Logs an informational message.
+         - Redirects the user to the `Index` page.
+       - If the deletion is successful:
+         - Removes the employee from the database.
+         - Redirects to the `EmployeeList` page.
+       - If the deletion fails:
+         - Logs the error.
+         - Redirects the user to an error page for further assistance.
+
+9. **Improved Razor View**
+   - Simplified the `Delete` button by using the `asp-route-id` attribute for consistent data transfer.
+   - Organized the `Detail` and `Delete` buttons for clarity in the table structure.
+
+10. **Enhanced Error Handling**
+   - Ensured the `DeleteEmployee` method:
+     - Redirects immediately if the employee record is `null`.
+     - Handles exceptions gracefully, logging detailed error messages for debugging.
+
+---
+
+### Code Implementation
+
+#### Razor View: `Delete` Button
+```html
+<a asp-controller="Employee" asp-action="DeleteEmployee" asp-route-id="@user.MemberID" class="btn btn-danger me-4" style="width: 150px;">Delete</a>
+
 
 ---
 
