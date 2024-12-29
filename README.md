@@ -4,6 +4,29 @@
 <img src="https://github.com/r2dev24/RestaurantERP/blob/main/Blank%20diagram.png">
 
 ## Development History
+### Dec 29, 2024
+1. **Controller Setup**
+  * Created a PayController to handle payroll-related requests.
+  * Connected the controller to the database using AppDbContext.
+  * Used ViewData to pass employee data from the controller to the view.
+  * Implemented the Payroll method to fetch the employee list and render it in the view.
+
+2. **View Implementation**
+  * Set the page title to "Payroll | ERP" for clear identification.
+  * Designed a dropdown menu to display the employee list dynamically.
+  * Utilized Bootstrap to create a clean, responsive, and intuitive UI.
+
+3. **Workflow**
+  * Data Retrieval:
+    - The controller fetches employee data from the database.
+  * Data Passing:
+    - The retrieved data is passed to the view via ViewData.
+  * View Rendering:
+    - The view generates a dropdown menu using the employee data.
+  * User Interaction:
+    - Users can select an employee from the dropdown menu, laying the foundation for further payroll functionality.
+    - 
+---
 
 ### Dec 28, 2024
 1. **Employee List View**
