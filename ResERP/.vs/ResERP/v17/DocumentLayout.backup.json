@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\ResERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\employee\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\employee\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\paycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\paycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 856,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,72 +39,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeeList.cshtml",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Employee\\EmployeeList.cshtml",
-              "RelativeDocumentMoniker": "ResERP\\Views\\Employee\\EmployeeList.cshtml",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Employee\\EmployeeList.cshtml",
-              "RelativeToolTip": "ResERP\\Views\\Employee\\EmployeeList.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAtAAAAAAAAAA==",
+              "Title": "Payroll.cshtml",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
+              "RelativeDocumentMoniker": "ResERP\\Views\\Pay\\Payroll.cshtml",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
+              "RelativeToolTip": "ResERP\\Views\\Pay\\Payroll.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T00:58:42.667Z",
+              "WhenOpened": "2024-12-29T00:14:39.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ResERP\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ResERP\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T17:33:03.64Z"
+              "WhenOpened": "2024-12-26T17:33:03.64Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "PayController.cs",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\PayController.cs",
+              "RelativeDocumentMoniker": "ResERP\\Controllers\\PayController.cs",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\PayController.cs",
+              "RelativeToolTip": "ResERP\\Controllers\\PayController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T00:13:04.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BranchController.cs",
               "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\BranchController.cs",
               "RelativeDocumentMoniker": "ResERP\\Controllers\\BranchController.cs",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\BranchController.cs",
               "RelativeToolTip": "ResERP\\Controllers\\BranchController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAqwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T04:46:56.7Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "784767a6-bfb5-4b6c-bbda-28e9d6a50fbc",
-        "Display": 0,
-        "X": 390,
-        "Y": 812,
-        "Width": 1995,
-        "Height": 1228,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainController.cs",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\MainController.cs",
-              "RelativeDocumentMoniker": "ResERP\\Controllers\\MainController.cs",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\MainController.cs",
-              "RelativeToolTip": "ResERP\\Controllers\\MainController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAG4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T03:02:52.481Z",
+              "WhenOpened": "2024-12-26T04:46:56.7Z",
               "EditorCaption": ""
             }
           ]

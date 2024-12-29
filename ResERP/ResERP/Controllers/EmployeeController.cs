@@ -240,7 +240,7 @@ namespace ResERP.Controllers
             if (employee == null)
             {
                 Console.WriteLine("Cannot find employee information");
-                return RedirectToAction("Index"); // Redirect to list if not found
+                return RedirectToAction("Index "); // Redirect to list if not found
             }
 
             try

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\ResERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\paycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\paycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\employee\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\employee\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 856,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "ResERP\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "ResERP\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAANQAAAAAAAAAAAAqwPIAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T03:18:01.626Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -52,14 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmployeeList.cshtml",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Employee\\EmployeeList.cshtml",
-              "RelativeDocumentMoniker": "ResERP\\Views\\Employee\\EmployeeList.cshtml",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Employee\\EmployeeList.cshtml",
-              "RelativeToolTip": "ResERP\\Views\\Employee\\EmployeeList.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAtAAAAAAAAAA==",
+              "Title": "Payroll.cshtml",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
+              "RelativeDocumentMoniker": "ResERP\\Views\\Pay\\Payroll.cshtml",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
+              "RelativeToolTip": "ResERP\\Views\\Pay\\Payroll.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T00:58:42.667Z",
+              "WhenOpened": "2024-12-29T00:14:39.994Z",
               "EditorCaption": ""
             },
             {
@@ -70,9 +57,22 @@
               "RelativeDocumentMoniker": "ResERP\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ResERP\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-26T17:33:03.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PayController.cs",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\PayController.cs",
+              "RelativeDocumentMoniker": "ResERP\\Controllers\\PayController.cs",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\PayController.cs",
+              "RelativeToolTip": "ResERP\\Controllers\\PayController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T00:13:04.947Z",
               "EditorCaption": ""
             },
             {
@@ -83,9 +83,10 @@
               "RelativeDocumentMoniker": "ResERP\\Controllers\\BranchController.cs",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\BranchController.cs",
               "RelativeToolTip": "ResERP\\Controllers\\BranchController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAqwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T04:46:56.7Z"
+              "WhenOpened": "2024-12-26T04:46:56.7Z",
+              "EditorCaption": ""
             }
           ]
         }
