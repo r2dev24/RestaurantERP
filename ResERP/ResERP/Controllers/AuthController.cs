@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ResERP.Data;
@@ -31,12 +32,21 @@ namespace ResERP.Controllers
             }
 
             //Get User Account
-            var account = await _context.Accounts.FirstOrDefaultAsync(a => a.AccountEmail == model.AccountEmail && a.AccountPassword == model.AccountPassword);
+            var account = await _context.Accounts.FirstOrDefaultAsync(a => a.AccountEmail == model.AccountEmail);
 
             //Check Account is valid
             if (account == null)
             {
                 ModelState.AddModelError("Account", "The user account is invalid.");
+                return RedirectToAction("Index", "Home");
+            }
+
+            //Hasher matching
+            var hasher = new PasswordHasher<Account>();
+            var result = hasher.VerifyHashedPassword(account ,account.AccountPassword, model.AccountPassword);
+
+            if (result != PasswordVerificationResult.Success) {
+                ModelState.AddModelError("Account", "Invalid password!");
                 return RedirectToAction("Index", "Home");
             }
 
@@ -83,11 +93,15 @@ namespace ResERP.Controllers
                 return RedirectToAction("AddNewUser", "Main");
             }
 
+            //Hashing
+            var hash = new PasswordHasher<Account>();
+            var hashed = hash.HashPassword(null, model.AccountPassword);
+
             //add model to account
             var account = new Account
             {
                 AccountEmail = model.AccountEmail,
-                AccountPassword = model.AccountPassword,
+                AccountPassword = hashed,
                 RoleID = model.RoleID,
             };
 
@@ -130,5 +144,6 @@ namespace ResERP.Controllers
                 return RedirectToAction("AddNewUser", "Main");
             }
         }
+
     }
 }

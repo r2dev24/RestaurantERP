@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ResERP.Models;
+using ResERP.Models.Payroll;
 
 namespace ResERP.Data
 {
@@ -20,5 +21,10 @@ namespace ResERP.Data
         public DbSet<MemberAddress> MemberAddresses { get; set; }
         public DbSet<BranchRole> BranchRoles { get; set; }
         public DbSet<MemberRole> MemberRoles { get; set; }
+
+        //Payroll
+        public DbSet<Payroll> Payrolls { get; set; }
+        public DbSet<PayType> PayTypes { get; set; }
+        public DbSet<Deduction> Deductions { get; set; }
     }
 }
