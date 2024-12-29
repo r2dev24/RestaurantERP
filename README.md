@@ -3,8 +3,27 @@
 1. Database Modelling(Last Update: Dec 29, 2024)
 ![Blank diagram (1)](https://github.com/user-attachments/assets/47a90083-e00e-4fd1-b1ab-3c77e57508e5)
 
-
 ## Development History
+
+### Dec 30, 2024
+1. Password Hashing:
+ * Implemented PasswordHasher to securely store hashed passwords.
+ * Enhanced login security by verifying hashed passwords during authentication.
+
+2. Login Logic Improvement:
+ * Added meaningful error messages for failed login attempts.
+ * Improved stability with validation checks and exception handling.
+
+3. Cookie Authentication:
+ * Used HttpContext.SignInAsync for cookie-based user authentication.
+ * Managed user details (name, email, role) using Claims.
+
+4. Enhanced User Experience:
+ * Preserved input values and displayed error messages on login failure.
+ * Redirected users to the dashboard on successful login.
+ * 
+---
+
 ### Dec 29, 2024
 1. **Controller Setup**
   * Created a PayController to handle payroll-related requests.
