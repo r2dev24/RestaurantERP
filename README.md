@@ -21,7 +21,7 @@
 4. Enhanced User Experience:
  * Preserved input values and displayed error messages on login failure.
  * Redirected users to the dashboard on successful login.
- * 
+
 ---
 
 ### Dec 29, 2024
