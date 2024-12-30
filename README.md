@@ -7,25 +7,33 @@
 
 ### Dec 31, 2024
 
-1. **Dynamic Payroll Calculation**
-   * Supports Hourly, Daily, and Monthly pay types.
-   * Calculates total payroll based on input values and current month days.
-     
-2. **Tax Calculation**
-   * Implements Canadian Federal Tax:
-     - Ranges: 15%, 20.5%, 26%, 29%, 33%.
-   * Implements: Canadian Provincial Tax:
-     - Range: All Provinces in Canada
-   * Updates tax values dynamically based on total salary.
+1. **Payroll Calculation Logic Enhancements**
+    * Federal Tax Calculation
+      * Implemented the calFederalTax function to dynamically calculate federal tax based on salary brackets.
+    * Provincial Tax Calculation
+      * Structured provincial tax rates as an object (taxRate) and created the calProvincialTax function to compute tax based on the selected province and salary amount.
+    * CPP and EI Calculation
+      * Added functions for calculating Canada Pension Plan (CPP) and Employment Insurance (EI) contributions (calCPPQPP and calEmployeeInsurance).
 
-3. **JavaScript Enhancements**
-   * Unified logic in updatePayroll function for cleaner, reusable code.
-   * Dynamic updates triggered by changes to amount, payType, and workhours.
-   * Validates inputs to prevent NaN values.
-     
-4. HTML Improvements
-   * Resolved duplicate id issues for consistent functionality.
-   * Enhanced form structure with Bootstrap elements.
+2. JavaScript Logic Improvements:
+    * updatePayroll Function
+      * Calculates total salary (totalAmount) and updates tax and deduction values based on inputs (amount, payType, workhours, province).
+      * Added validation to handle NaN and default values.
+    * Event Listeners:
+      * Added event listeners (input, change) to dynamically update calculations based on user input.
+
+3. HTML/Bootstrap Modifications:
+    * Enhanced input fields and dropdown menus (payType, province).
+    * Added $ symbols to output fields (Federal Tax, Provincial Tax, CPP, EI) for clarity.
+
+4. Debugging and Problem-Solving:
+    * Fixed a typo in Math.min that caused EI calculation issues.
+    * Resolved issues where dynamic updates were not reflecting properly.
+    * Used browser console logs to trace data flow and verify the correctness of calculations.
+
+5. Maintenance and Scalability:
+    * Improved structure by organizing tax rates into objects for easier maintenance.
+    * Designed the logic to allow for easy addition of new provinces or tax rules.
 
 ---
 
