@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z75hgRnhooNqALJ8G4UQtV1Abe4H5TjxOXuXImphq1I=",
+  "Hash": "lO7E6B0vcPGIPuvAySZQV64rZDGZXOORFNPN0W2NJvE=",
   "Source": "ResERP",
   "BasePath": "_content/ResERP",
   "Mode": "Default",
@@ -836,12 +836,12 @@
       "OriginalItemSpec": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-xm6imo57u7.gz",
+      "Identity": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-k9buktnc1s.gz",
       "SourceId": "ResERP",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ResERP",
-      "RelativePath": "js/taxCalculator#[.{fingerprint=xm6imo57u7}]?.js.gz",
+      "RelativePath": "js/taxCalculator#[.{fingerprint=k9buktnc1s}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -850,8 +850,8 @@
       "RelatedAsset": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "bftrofh0xx",
-      "Integrity": "t5EPsNP36D1PDcc3De3UC7CAI6sSwPLQfSOQorqw8o8=",
+      "Fingerprint": "5p1dk0osee",
+      "Integrity": "J6L3IKZanub8wB3D273ETTlZK1m13TJ7H9Z9tTALD4U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js"
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xm6imo57u7",
-      "Integrity": "58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0=",
+      "Fingerprint": "k9buktnc1s",
+      "Integrity": "eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\taxCalculator.js"
@@ -3665,12 +3665,12 @@
     },
     {
       "Route": "js/taxCalculator.js",
-      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-xm6imo57u7.gz",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-k9buktnc1s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000757002271"
+          "Quality": "0.000641848524"
         }
       ],
       "ResponseHeaders": [
@@ -3680,15 +3680,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1320"
+          "Value": "1557"
         },
         {
           "Name": "ETag",
-          "Value": "\"t5EPsNP36D1PDcc3De3UC7CAI6sSwPLQfSOQorqw8o8=\""
+          "Value": "\"J6L3IKZanub8wB3D273ETTlZK1m13TJ7H9Z9tTALD4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 30 Dec 2024 22:01:20 GMT"
+          "Value": "Mon, 30 Dec 2024 23:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3708,13 +3708,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0=\""
+          "Value": "W/\"eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0="
+          "Value": "sha256-eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ="
         }
       ]
     },
@@ -3729,7 +3729,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5884"
+          "Value": "6784"
         },
         {
           "Name": "Content-Type",
@@ -3737,11 +3737,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0=\""
+          "Value": "\"eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 30 Dec 2024 22:01:20 GMT"
+          "Value": "Mon, 30 Dec 2024 23:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3751,13 +3751,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0="
+          "Value": "sha256-eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ="
         }
       ]
     },
     {
       "Route": "js/taxCalculator.js.gz",
-      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-xm6imo57u7.gz",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-k9buktnc1s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3766,7 +3766,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1320"
+          "Value": "1557"
         },
         {
           "Name": "Content-Type",
@@ -3774,11 +3774,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t5EPsNP36D1PDcc3De3UC7CAI6sSwPLQfSOQorqw8o8=\""
+          "Value": "\"J6L3IKZanub8wB3D273ETTlZK1m13TJ7H9Z9tTALD4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 30 Dec 2024 22:01:20 GMT"
+          "Value": "Mon, 30 Dec 2024 23:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3796,18 +3796,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t5EPsNP36D1PDcc3De3UC7CAI6sSwPLQfSOQorqw8o8="
+          "Value": "sha256-J6L3IKZanub8wB3D273ETTlZK1m13TJ7H9Z9tTALD4U="
         }
       ]
     },
     {
-      "Route": "js/taxCalculator.xm6imo57u7.js",
-      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-xm6imo57u7.gz",
+      "Route": "js/taxCalculator.k9buktnc1s.js",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-k9buktnc1s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000757002271"
+          "Quality": "0.000641848524"
         }
       ],
       "ResponseHeaders": [
@@ -3817,15 +3817,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1320"
+          "Value": "1557"
         },
         {
           "Name": "ETag",
-          "Value": "\"t5EPsNP36D1PDcc3De3UC7CAI6sSwPLQfSOQorqw8o8=\""
+          "Value": "\"J6L3IKZanub8wB3D273ETTlZK1m13TJ7H9Z9tTALD4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 30 Dec 2024 22:01:20 GMT"
+          "Value": "Mon, 30 Dec 2024 23:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3845,13 +3845,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0=\""
+          "Value": "W/\"eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xm6imo57u7"
+          "Value": "k9buktnc1s"
         },
         {
           "Name": "label",
@@ -3859,12 +3859,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0="
+          "Value": "sha256-eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ="
         }
       ]
     },
     {
-      "Route": "js/taxCalculator.xm6imo57u7.js",
+      "Route": "js/taxCalculator.k9buktnc1s.js",
       "AssetFile": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3874,7 +3874,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5884"
+          "Value": "6784"
         },
         {
           "Name": "Content-Type",
@@ -3882,11 +3882,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0=\""
+          "Value": "\"eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 30 Dec 2024 22:01:20 GMT"
+          "Value": "Mon, 30 Dec 2024 23:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3896,7 +3896,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xm6imo57u7"
+          "Value": "k9buktnc1s"
         },
         {
           "Name": "label",
@@ -3904,13 +3904,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0="
+          "Value": "sha256-eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ="
         }
       ]
     },
     {
-      "Route": "js/taxCalculator.xm6imo57u7.js.gz",
-      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-xm6imo57u7.gz",
+      "Route": "js/taxCalculator.k9buktnc1s.js.gz",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-k9buktnc1s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3919,7 +3919,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1320"
+          "Value": "1557"
         },
         {
           "Name": "Content-Type",
@@ -3927,11 +3927,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t5EPsNP36D1PDcc3De3UC7CAI6sSwPLQfSOQorqw8o8=\""
+          "Value": "\"J6L3IKZanub8wB3D273ETTlZK1m13TJ7H9Z9tTALD4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 30 Dec 2024 22:01:20 GMT"
+          "Value": "Mon, 30 Dec 2024 23:32:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3949,7 +3949,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xm6imo57u7"
+          "Value": "k9buktnc1s"
         },
         {
           "Name": "label",
@@ -3957,7 +3957,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-t5EPsNP36D1PDcc3De3UC7CAI6sSwPLQfSOQorqw8o8="
+          "Value": "sha256-J6L3IKZanub8wB3D273ETTlZK1m13TJ7H9Z9tTALD4U="
         }
       ]
     },

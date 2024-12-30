@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\ResERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\wwwroot\\js\\taxcalculator.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\wwwroot\\js\\taxcalculator.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,13 +34,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Payroll.cshtml",
               "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
               "RelativeDocumentMoniker": "ResERP\\Views\\Pay\\Payroll.cshtml",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
               "RelativeToolTip": "ResERP\\Views\\Pay\\Payroll.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAGAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-29T21:34:14.56Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "ResERP\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACgAAAAAAAAAAAAmwEwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T17:33:03.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T17:33:03.64Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,8 @@
       "FloatingWindowState": {
         "Id": "354766c0-0228-4784-8c99-dc022952a4f9",
         "Display": 0,
-        "X": 1731,
-        "Y": 825,
+        "X": 1830,
+        "Y": 755,
         "Width": 1506,
         "Height": 1143,
         "WindowState": 0
@@ -105,13 +104,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "taxCalculator.js",
               "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
               "RelativeDocumentMoniker": "ResERP\\wwwroot\\js\\taxCalculator.js",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
               "RelativeToolTip": "ResERP\\wwwroot\\js\\taxCalculator.js",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAowIYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAuwMYAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-12-30T17:32:21.595Z",
               "EditorCaption": ""

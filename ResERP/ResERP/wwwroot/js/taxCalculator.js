@@ -6,6 +6,21 @@ function getDaysInMonth() {
     return new Date(year, month + 1, 0).getDate();
 }
 
+//Calculate Federal Tax
+function calFederalTax(amount) {
+    if (amount < 53359) {
+        return amount * 0.15;
+    } else if (amount >= 53359 && amount < 106717) {
+        return amount * 0.205;
+    } else if (amount >= 106717 && amount < 165430) {
+        return amount * 0.26;
+    } else if (amount >= 165430 && amount < 235675) {
+        return amount * 0.29;
+    } else {
+        return amount * 0.33;
+    }
+}
+
 //Provincial Tax
 function calProvincialTax(province, amount) {
     //Tax Rates
@@ -102,17 +117,45 @@ function calProvincialTax(province, amount) {
     return 0;
 }
 
+//CPP Calculator
+function calCPPQPP(province, amount) {
+    const maxEarning = 66600;
+    const basicExemption = 3500;
+
+    if (amount <= basicExemption) {
+        return 0;
+    }
+
+    amount = Math.min(amount, maxEarning);
+
+    const contributionRate = province === "QC" ? 0.064 : 0.0595;
+
+    return ((amount - basicExemption) * contributionRate) / 12;
+}
+
+function calEmployeeInsurance(province, amount) {
+    const maxEarning = 61500;
+
+    amount = Math.min(amount, maxEarning); 
+    const contributionRate = province === "QC" ? 0.0127 : 0.0166;
+
+    return (amount * contributionRate) / 12;
+}
+
 function updatePayroll() {
     // Get Elements
     const getAmount = parseFloat(document.getElementById("amount").value) || 0; 
-    const getPayType = document.getElementById("payType").value; 
     const getWorkHours = parseFloat(document.getElementById("workhours").value) || 0;
+    const xtraWorkHours = parseFloat(document.getElementById("xtraWork").value) || 0;
+    const bonus = parseFloat(document.getElementById("bonus").value) || 0;
+
+    const getPayType = document.getElementById("payType").value; 
     const province = document.getElementById("province").value;
 
     const federalTaxInput = document.getElementById("federalTax");
     const provincialTaxInput = document.getElementById("provincialTax");
-
-
+    const cppInput = document.getElementById("cpp");
+    const eiInput = document.getElementById("ei");
 
     // if workhours value is 0, stop calculating
     if (getPayType === "h" && getWorkHours === 0) {
@@ -125,36 +168,28 @@ function updatePayroll() {
 
     // Calculate Total Value by pay type
     if (getPayType === "h") {
-        totalAmount = getAmount * getWorkHours; //hourly
+        totalAmount = (getAmount * (getWorkHours + xtraWorkHours)) + bonus; //hourly
     } else if (getPayType === "d") {
-        totalAmount = getAmount * getDaysInMonth(); //daily
+        totalAmount = (getAmount * getDaysInMonth()) + bonus; //daily
     } else if (getPayType === "m") {
-        totalAmount = getAmount; // monthly
+        totalAmount = getAmount + bonus; // monthly
     }
-
-    //Calculate Federal Tax
-    function calFederalTax(amount) {
-        if (amount < 53359) {
-            return amount * 0.15;
-        } else if (amount >= 53359 && amount < 106717) {
-            return amount * 0.205;
-        } else if (amount >= 106717 && amount < 165430) {
-            return amount * 0.26;
-        } else if (amount >= 165430 && amount < 235675) {
-            return amount * 0.29;
-        } else {
-            return amount * 0.33;
-        }
-    }
-
-
 
     // Federal Tax Value
     const calculatedFederalTax = calFederalTax(totalAmount);
     federalTaxInput.value = isNaN(calculatedFederalTax) ? "0.00" : calculatedFederalTax.toFixed(2);
 
+    //Provincial Tax Value
     const calculatedProvincialTax = calProvincialTax(province, totalAmount);
     provincialTaxInput.value = isNaN(calculatedProvincialTax) ? "0.00" : calculatedProvincialTax.toFixed(2);
+
+    //CPP QPP Value
+    const calculatedCPP = calCPPQPP(province, totalAmount);
+    cppInput.value = isNaN(calculatedCPP) ? "0.00" : calculatedCPP.toFixed(2);
+
+    //EI Value
+    const calculatedEI = calEmployeeInsurance(province, totalAmount);
+    eiInput.value = isNaN(calculatedEI) ? "0.00" : calculatedEI.toFixed(2);
 }
 
 //Event Listeners

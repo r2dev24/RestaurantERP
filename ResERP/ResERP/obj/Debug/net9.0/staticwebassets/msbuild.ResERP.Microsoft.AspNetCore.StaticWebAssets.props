@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xm6imo57u7</Fingerprint>
-      <Integrity>58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0=</Integrity>
+      <Fingerprint>k9buktnc1s</Fingerprint>
+      <Integrity>eNOuYmHyywyK1HAWUAm6A8TaK6JrsDuTN48GibPPdIQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\taxCalculator.js'))</OriginalItemSpec>
