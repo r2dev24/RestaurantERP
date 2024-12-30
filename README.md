@@ -12,8 +12,10 @@
    * Calculates total payroll based on input values and current month days.
      
 2. **Tax Calculation**
-   * Implements Canadian Federal Tax brackets:
+   * Implements Canadian Federal Tax:
      - Ranges: 15%, 20.5%, 26%, 29%, 33%.
+   * Implements: Canadian Provincial Tax:
+     - Range: All Provinces in Canada
    * Updates tax values dynamically based on total salary.
 
 3. **JavaScript Enhancements**
