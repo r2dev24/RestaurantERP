@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 856,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "ResERP\\Views\\Pay\\Payroll.cshtml",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
               "RelativeToolTip": "ResERP\\Views\\Pay\\Payroll.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADMAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAGAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-29T21:34:14.56Z",
               "EditorCaption": ""
@@ -55,7 +55,8 @@
               "RelativeToolTip": "ResERP\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACgAAAAAAAAAAAAmwEwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T17:33:03.64Z"
+              "WhenOpened": "2024-12-26T17:33:03.64Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -91,8 +92,8 @@
       "FloatingWindowState": {
         "Id": "354766c0-0228-4784-8c99-dc022952a4f9",
         "Display": 0,
-        "X": 1759,
-        "Y": 820,
+        "X": 1731,
+        "Y": 825,
         "Width": 1506,
         "Height": 1143,
         "WindowState": 0
@@ -110,7 +111,7 @@
               "RelativeDocumentMoniker": "ResERP\\wwwroot\\js\\taxCalculator.js",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
               "RelativeToolTip": "ResERP\\wwwroot\\js\\taxCalculator.js",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwDcAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAowIYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-12-30T17:32:21.595Z",
               "EditorCaption": ""

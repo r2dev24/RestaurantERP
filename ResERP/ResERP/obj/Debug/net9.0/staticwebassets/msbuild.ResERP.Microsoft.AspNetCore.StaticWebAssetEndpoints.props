@@ -39,14 +39,14 @@
     <StaticWebAssetEndpoint Include="_content/ResERP/js/taxCalculator.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\taxCalculator.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2252"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 19:28:53 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5884"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002258cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 22:01:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ResERP/js/taxCalculator.nw9wckg106.js">
+    <StaticWebAssetEndpoint Include="_content/ResERP/js/taxCalculator.xm6imo57u7.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\taxCalculator.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nw9wckg106"},{"Name":"integrity","Value":"sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="},{"Name":"label","Value":"_content/ResERP/js/taxCalculator.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2252"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 19:28:53 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xm6imo57u7"},{"Name":"integrity","Value":"sha256-58cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0="},{"Name":"label","Value":"_content/ResERP/js/taxCalculator.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5884"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002258cmA5/0nCa1EHZgdeNGwwQKlS9KK2cQc9Y61akKla0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 22:01:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ResERP/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
