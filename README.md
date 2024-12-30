@@ -5,6 +5,28 @@
 
 ## Development History
 
+### Dec 31, 2024
+
+1. **Dynamic Payroll Calculation**
+   * Supports Hourly, Daily, and Monthly pay types.
+   * Calculates total payroll based on input values and current month days.
+     
+2. **Tax Calculation**
+   * Implements Canadian Federal Tax brackets:
+     - Ranges: 15%, 20.5%, 26%, 29%, 33%.
+   * Updates tax values dynamically based on total salary.
+
+3. **JavaScript Enhancements**
+   * Unified logic in updatePayroll function for cleaner, reusable code.
+   * Dynamic updates triggered by changes to amount, payType, and workhours.
+   * Validates inputs to prevent NaN values.
+     
+4. HTML Improvements
+   * Resolved duplicate id issues for consistent functionality.
+   * Enhanced form structure with Bootstrap elements.
+
+---
+
 ### Dec 30, 2024
 1. Password Hashing:
  * Implemented PasswordHasher to securely store hashed passwords.
