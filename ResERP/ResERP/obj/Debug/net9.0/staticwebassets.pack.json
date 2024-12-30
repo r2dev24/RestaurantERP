@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
+      "PackagePath": "staticwebassets\\js\\taxCalculator.js"
+    },
+    {
       "Id": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

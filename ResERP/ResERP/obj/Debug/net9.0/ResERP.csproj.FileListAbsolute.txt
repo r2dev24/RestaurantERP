@@ -219,3 +219,4 @@ C:\Projects\ResERP\ResERP\obj\Debug\net9.0\ResERP.pdb
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\ResERP.genruntimeconfig.cache
 C:\Projects\ResERP\ResERP\obj\Debug\net9.0\ref\ResERP.dll
 C:\Projects\reserp\ResERP\obj\Debug\net9.0\compressed\tcq4mn9bk2-yjn5hk3c08.gz
+C:\Projects\ResERP\ResERP\obj\Debug\net9.0\compressed\ndw2zq6a3t-nw9wckg106.gz

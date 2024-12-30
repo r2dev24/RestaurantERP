@@ -32,17 +32,112 @@
                     <label class="text-white mb-2 fs-5">Select Pay Type</label>
                     <select id="payType" class="form-select">
                         <option value="" disabled selected>Select Pay Type</option>
-                        <option value="hourly">Hourly</option>
-                        <option value="daily">Daily</option>
-                        <option value="monthly">Monthly</option>
+                        <option value="h">Hourly</option>
+                        <option value="d">Daily</option>
+                        <option value="m">Monthly</option>
+                    </select>
+                </div>
+
+                @* Select Pay Type *@
+                <div class="col-3">
+                    <label class="text-white mb-2 fs-5">Select Province</label>
+                    <select id="province" class="form-select">
+                        <option value="" disabled selected>Select Province</option>
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="YT">Yukon</option>
                     </select>
                 </div>
             </div>
 
             @*Row 2*@
-            <div class="row">
+            <div class="row mt-4">
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Total Amount</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="text" id="amount" class="form-control" placeholder="Enter the base salary total" />
+                    </div>
+                </div>
 
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Work Hours</label>
+                    <input type="text" id="workhours" class="form-control" placeholder="Enter employee work hours" />
+                </div>
+
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Extra Work Hours</label>
+                    <input type="text"  class="form-control" placeholder="Enter employee extra work hours" />
+                </div>
+            </div>
+
+            @*Row 3*@
+            <div class="row mt-3">
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Promotion / Bonus</label>
+                    <input type="text" class="form-control" placeholder="Enter promotion or bonus pay" />
+                </div>
+
+                <div class="col-4">
+                    <label class="text-white mb-2 fs-5">Pay Date</label>
+                    <input type="date" class="form-control" />
+                </div>
+            </div>
+
+            @*Row 4*@
+            <div class="row mt-5">
+                <div class="col-3">
+                    <label class="text-white mb-2 fs-5">Federal Tax</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input readonly type="text" id="federalTax" class="form-control" placeholder="0.00" />
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <label class="text-white mb-2 fs-5">Provincial Tax</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input readonly type="text" id="provincialTax" class="form-control" placeholder="0.00" />
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <label class="text-white mb-2 fs-5">CPP</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input readonly type="text" id="provincialTax" class="form-control" placeholder="0.00" />
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <label class="text-white mb-2 fs-5">Employee Insurance</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input readonly type="text" id="provincialTax" class="form-control" placeholder="0.00" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-4" style="margin-top: 100px;">
+                <button type="reset" class="btn btn-outline-danger btn-lg" style="width: 250px;">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 250px;">Submit</button>
             </div>
         </form>
     </div>
 </div>
+
+@* JS *@
+@section Scripts {
+    <script src="~/js/taxCalculator.js"></script>
+}

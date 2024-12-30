@@ -1195,6 +1195,304 @@
       ]
     },
     {
+      "Route": "js/taxCalculator.js",
+      "AssetFile": "js/taxCalculator.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001237623762"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.js",
+      "AssetFile": "js/taxCalculator.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.js.gz",
+      "AssetFile": "js/taxCalculator.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.nw9wckg106.js",
+      "AssetFile": "js/taxCalculator.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001237623762"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nw9wckg106"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="
+        },
+        {
+          "Name": "label",
+          "Value": "js/taxCalculator.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.nw9wckg106.js",
+      "AssetFile": "js/taxCalculator.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nw9wckg106"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="
+        },
+        {
+          "Name": "label",
+          "Value": "js/taxCalculator.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.nw9wckg106.js.gz",
+      "AssetFile": "js/taxCalculator.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nw9wckg106"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA="
+        },
+        {
+          "Name": "label",
+          "Value": "js/taxCalculator.js.gz"
+        }
+      ]
+    },
+    {
       "Route": "lib/bootstrap/LICENSE",
       "AssetFile": "lib/bootstrap/LICENSE",
       "Selectors": [],

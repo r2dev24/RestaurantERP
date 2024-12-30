@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\ResERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\main\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\main\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\views\\pay\\payroll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\wwwroot\\js\\taxcalculator.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|solutionrelative:reserp\\wwwroot\\js\\taxcalculator.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D29465E6-F13D-4E5E-B9B4-631CE3DFD0B1}|ResERP\\ResERP.csproj|c:\\projects\\reserp\\reserp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,32 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 856,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddNewUser.cshtml",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Main\\AddNewUser.cshtml",
-              "RelativeDocumentMoniker": "ResERP\\Views\\Main\\AddNewUser.cshtml",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Main\\AddNewUser.cshtml",
-              "RelativeToolTip": "ResERP\\Views\\Main\\AddNewUser.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Title": "Payroll.cshtml",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
+              "RelativeDocumentMoniker": "ResERP\\Views\\Pay\\Payroll.cshtml",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Pay\\Payroll.cshtml",
+              "RelativeToolTip": "ResERP\\Views\\Pay\\Payroll.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-29T19:18:21.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ResERP\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ResERP\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAiwBgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T19:06:34.821Z",
+              "WhenOpened": "2024-12-29T21:34:14.56Z",
               "EditorCaption": ""
             },
             {
@@ -66,10 +53,9 @@
               "RelativeDocumentMoniker": "ResERP\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Projects\\ResERP\\ResERP\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ResERP\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAmwA4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwEwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T17:33:03.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T17:33:03.64Z"
             },
             {
               "$type": "Document",
@@ -94,6 +80,40 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T04:46:56.7Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "354766c0-0228-4784-8c99-dc022952a4f9",
+        "Display": 0,
+        "X": 1759,
+        "Y": 820,
+        "Width": 1506,
+        "Height": 1143,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "taxCalculator.js",
+              "DocumentMoniker": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
+              "RelativeDocumentMoniker": "ResERP\\wwwroot\\js\\taxCalculator.js",
+              "ToolTip": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
+              "RelativeToolTip": "ResERP\\wwwroot\\js\\taxCalculator.js",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-30T17:32:21.595Z",
+              "EditorCaption": ""
             }
           ]
         }

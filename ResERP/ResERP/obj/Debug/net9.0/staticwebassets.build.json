@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dgJaFgqxkLv+isss0YSIBv1TqJ+txCt8iVgD0haECCY=",
+  "Hash": "hZgVHXXGUBHScU7GwgiWQ+QDoDI5i1ZZRXP/s+Pa1Dg=",
   "Source": "ResERP",
   "BasePath": "_content/ResERP",
   "Mode": "Default",
@@ -836,6 +836,27 @@
       "OriginalItemSpec": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+      "Identity": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-nw9wckg106.gz",
+      "SourceId": "ResERP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ResERP",
+      "RelativePath": "js/taxCalculator#[.{fingerprint=nw9wckg106}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "2047eekofa",
+      "Integrity": "AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js"
+    },
+    {
       "Identity": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\nfw8nwfx3m-47otxtyo56.gz",
       "SourceId": "ResERP",
       "SourceType": "Discovered",
@@ -1464,6 +1485,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
+      "SourceId": "ResERP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\",
+      "BasePath": "_content/ResERP",
+      "RelativePath": "js/taxCalculator#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nw9wckg106",
+      "Integrity": "2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\taxCalculator.js"
     },
     {
       "Identity": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -3618,6 +3660,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-yDWcaVOUXjBQ9xRXZx4djENaioZDHjb1epIxoULlZfA="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.js",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-nw9wckg106.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001237623762"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.js",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.js.gz",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-nw9wckg106.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.nw9wckg106.js",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-nw9wckg106.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001237623762"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nw9wckg106"
+        },
+        {
+          "Name": "label",
+          "Value": "js/taxCalculator.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.nw9wckg106.js",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\wwwroot\\js\\taxCalculator.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nw9wckg106"
+        },
+        {
+          "Name": "label",
+          "Value": "js/taxCalculator.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="
+        }
+      ]
+    },
+    {
+      "Route": "js/taxCalculator.nw9wckg106.js.gz",
+      "AssetFile": "C:\\Projects\\ResERP\\ResERP\\obj\\Debug\\net9.0\\compressed\\ndw2zq6a3t-nw9wckg106.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Dec 2024 19:28:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nw9wckg106"
+        },
+        {
+          "Name": "label",
+          "Value": "js/taxCalculator.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AhZ7EI+55rNrSrWUYYWFRXvKk7h1jPgzfY3O2Cs7laA="
         }
       ]
     },

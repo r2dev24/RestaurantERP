@@ -37,6 +37,7 @@ C:\Projects\ResERP\ResERP\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.cs
 C:\Projects\ResERP\ResERP\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
 C:\Projects\ResERP\ResERP\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
 C:\Projects\ResERP\ResERP\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Projects\ResERP\ResERP\wwwroot\js\taxCalculator.js
 C:\Projects\ResERP\ResERP\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 C:\Projects\ResERP\ResERP\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 C:\Projects\ResERP\ResERP\wwwroot\lib\bootstrap\dist\js\bootstrap.js
@@ -63,6 +64,7 @@ C:\Projects\ResERP\ResERP\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
+wwwroot\js\taxCalculator.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

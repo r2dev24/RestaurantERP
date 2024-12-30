@@ -36,6 +36,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yjn5hk3c08"},{"Name":"integrity","Value":"sha256-gkjLAasQBWq\u002BLoZVoY48KpVl9OCn4E42P8oFkK/EPao="},{"Name":"label","Value":"_content/ResERP/js/site.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2377"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022gkjLAasQBWq\u002BLoZVoY48KpVl9OCn4E42P8oFkK/EPao=\u0022"},{"Name":"Last-Modified","Value":"Fri, 27 Dec 2024 23:04:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ResERP/js/taxCalculator.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\taxCalculator.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2252"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 19:28:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ResERP/js/taxCalculator.nw9wckg106.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\taxCalculator.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nw9wckg106"},{"Name":"integrity","Value":"sha256-2Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o="},{"Name":"label","Value":"_content/ResERP/js/taxCalculator.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2252"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222Wlpbez3UdTi4dTx2Akm4CEu9ezPSmHzRYXgI3KEF1o=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 19:28:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ResERP/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
