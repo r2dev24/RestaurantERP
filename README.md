@@ -5,7 +5,32 @@
 
 ## Development History
 
-### Dec 31, 2024
+### Dec 31, 2024 - 02
+
+1. **Implemented PayrollSubmit Method**
+      * Added data to the Deduction, Payroll, and PayType tables.
+      * Redirected to EmployeeList on success; handled errors by returning to the Payroll view.
+        
+2. **Resolved HTTP 405 Error**
+      * Added method="post" and @Html.AntiForgeryToken() in the form.
+      * Applied [ValidateAntiForgeryToken] attribute to the controller.
+        
+3. **View Modifications**
+      * Added form fields for Federal Tax, Provincial Tax, CPP, and Employee Insurance.
+      * Integrated JavaScript for dynamic input handling.
+        
+4. **JavaScript Calculation Logic**
+      * Implemented updatePayroll function to calculate salary, taxes, CPP, and Employee Insurance based on PayType.
+      * Used event listeners for real-time updates on input or selection changes.
+        
+5. **Final Testing**
+      * Verified successful POST handling by PayrollSubmit.
+      * Resolved HTTP 405 error and confirmed data is correctly stored in the database.
+
+
+---
+
+### Dec 31, 2024 - 01
 
 1. **Payroll Calculation Logic Enhancements**
     * Federal Tax Calculation
