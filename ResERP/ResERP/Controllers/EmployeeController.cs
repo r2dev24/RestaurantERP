@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ResERP.Data;
 using ResERP.Models;
+using ResERP.Models.Payroll;
 using ResERP.Models.ViewModels;
 
 namespace ResERP.Controllers
@@ -208,6 +209,7 @@ namespace ResERP.Controllers
         [HttpGet]
         public async Task<IActionResult> GetEmployeeDetail(int id)
         {
+            //Member Branches
             var member = await _context.BranchMembers.FirstOrDefaultAsync(m => m.MemberID == id);
             var address = await _context.MemberAddresses.FirstOrDefaultAsync(a => a.MemberID == id);
             var role = await _context.MemberRoles.FirstOrDefaultAsync(r => r.MemberID == id);
@@ -220,13 +222,82 @@ namespace ResERP.Controllers
                 RoleName = getRole.RoleName,
                 DateBirth = member.DateBirth,
                 PhoneNumber = member.PhoneNumber,
-                StreetNumber =  address.StreetNumber,
+                StreetNumber = address.StreetNumber,
                 StreetAddress = address.StreetAddress,
                 City = address.City,
                 Province = address.Province,
                 PostalCode = address.PostalCode,
                 Country = address.Country,
                 BranchName = branch.BranchName,
+            };
+
+            //Pay roll
+            var payroll = await _context.Payrolls.FirstOrDefaultAsync(p => p.MemberID == member.MemberID);
+
+            if (payroll == null)
+            {
+                payroll = new Payroll
+                {
+                    BaseSalary = 0,
+                    WorkHours = 0,
+                    OverTimeWorkHours = 0,
+                    PromotionPay = 0,
+                    PayDate = DateTime.Now
+                };
+            }
+
+            var paytype = await _context.PayTypes.FirstOrDefaultAsync(pt => pt.Payroll_ID == payroll.Payroll_ID);
+
+            if (paytype == null)
+            {
+                paytype = new PayType
+                {
+                    PayTypes = "Default"
+                };
+            }
+
+            var deduction = await _context.Deductions.FirstOrDefaultAsync(d => d.DeductionID == payroll.DeductionID);
+
+            if (deduction == null)
+            {
+                deduction = new Deduction
+                {
+                    FederalTax = 0,
+                    ProvincialTax = 0,
+                    CPP = 0,
+                    EmployeeInsurance = 0
+                };
+            }
+
+
+            var paydetails = new PayrollViewModel
+            {
+                BaseSalary = payroll.BaseSalary,
+                WorkHours = payroll.WorkHours,
+                OverTimeWorkHours = payroll.OverTimeWorkHours,
+                PromotionPay  = payroll.PromotionPay,
+                PayDate = payroll.PayDate,
+                PayTypes = paytype.PayTypes,
+                FederalTax = deduction.FederalTax,
+                ProvincialTax = deduction.ProvincialTax,
+                CPP = deduction.CPP,
+                EmployeeInsurance = deduction.EmployeeInsurance,
+            };
+
+            ViewData["PayDetail"] = paydetails;
+
+            ViewData["PayDetail"] = new PayrollViewModel
+            {
+                BaseSalary = payroll.BaseSalary,
+                WorkHours = payroll.WorkHours,
+                OverTimeWorkHours = payroll.OverTimeWorkHours,
+                PromotionPay = payroll.PromotionPay,
+                PayDate = payroll.PayDate,
+                PayTypes = paytype.PayTypes,
+                FederalTax = deduction.FederalTax,
+                ProvincialTax = deduction.ProvincialTax,
+                CPP = deduction.CPP,
+                EmployeeInsurance = deduction.EmployeeInsurance,
             };
 
             return PartialView("_EmpDetail", details);

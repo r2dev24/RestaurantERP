@@ -1,4 +1,7 @@
-﻿@{
+﻿@using ResERP.Models.ViewModels
+@model PayrollViewModel
+
+@{
     ViewData["Title"] = "Payroll | ERP";
 
     //View Data
@@ -10,13 +13,14 @@
     <h1 class="text-white fw-bold mb-5">Member Payroll</h1>
     <div class="container-fluid w-50">
         @*Form Start*@
-        <form method="post">
+        <form asp-controller="Pay" asp-action="PayrollSubmit" method="post">
+            @Html.AntiForgeryToken()
             @* Row 1 *@
             <div class="row">
                 @* Select Employee *@
                 <div class="col-4">
                     <label class="text-white mb-2 fs-5">Select Employee</label>
-                    <select name="id" class="form-select form-select mb-3">
+                    <select asp-for="MemberID" class="form-select form-select mb-3">
                         <option value="" disabled selected>Select Employee</option>
                         @foreach (var members in memberList)
                         {
@@ -30,7 +34,7 @@
                 @* Select Pay Type *@
                 <div class="col-3">
                     <label class="text-white mb-2 fs-5">Select Pay Type</label>
-                    <select id="payType" class="form-select">
+                    <select asp-for="PayTypes" id="payType" class="form-select">
                         <option value="" disabled selected>Select Pay Type</option>
                         <option value="h">Hourly</option>
                         <option value="d">Daily</option>
@@ -63,21 +67,21 @@
             @*Row 2*@
             <div class="row mt-4">
                 <div class="col-4">
-                    <label class="text-white mb-2 fs-5">Total Amount</label>
+                    <label class="text-white mb-2 fs-5">Amount</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">$</span>
-                        <input type="text" id="amount" class="form-control" placeholder="Enter the base salary total" />
+                        <input asp-for="BaseSalary" type="text" id="amount" class="form-control" placeholder="Enter the base salary total" />
                     </div>
                 </div>
 
                 <div class="col-4">
                     <label class="text-white mb-2 fs-5">Work Hours</label>
-                    <input type="text" id="workhours" class="form-control" placeholder="Enter employee work hours" />
+                    <input asp-for="WorkHours" type="text" id="workhours" class="form-control" placeholder="Enter employee work hours" />
                 </div>
 
                 <div class="col-4">
-                    <label class="text-white mb-2 fs-5">Extra Work Hours</label>
-                    <input type="text" id="xtraWork"  class="form-control" placeholder="Enter employee extra work hours" />
+                    <label class="text-white mb-2 fs-5">Overtime Work Hours</label>
+                    <input asp-for="OverTimeWorkHours" type="text" id="xtraWork"  class="form-control" placeholder="Enter employee overtime work hours" />
                 </div>
             </div>
 
@@ -85,12 +89,12 @@
             <div class="row mt-3">
                 <div class="col-4">
                     <label class="text-white mb-2 fs-5">Promotion / Bonus</label>
-                    <input type="text" id="bonus" class="form-control" placeholder="Enter promotion or bonus pay" />
+                    <input asp-for="PromotionPay" type="text" id="bonus" class="form-control" placeholder="Enter promotion or bonus pay" />
                 </div>
 
                 <div class="col-4">
                     <label class="text-white mb-2 fs-5">Pay Date</label>
-                    <input type="date" class="form-control" />
+                    <input asp-for="PayDate" type="date" class="form-control" />
                 </div>
             </div>
 
@@ -100,7 +104,7 @@
                     <label class="text-white mb-2 fs-5">Federal Tax</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">$</span>
-                        <input readonly type="text" id="federalTax" class="form-control" placeholder="0.00" />
+                        <input asp-for="FederalTax" readonly type="text" id="federalTax" class="form-control" placeholder="0.00" />
                     </div>
                 </div>
 
@@ -108,7 +112,7 @@
                     <label class="text-white mb-2 fs-5">Provincial Tax</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">$</span>
-                        <input readonly type="text" id="provincialTax" class="form-control" placeholder="0.00" />
+                        <input asp-for="ProvincialTax" readonly type="text" id="provincialTax" class="form-control" placeholder="0.00" />
                     </div>
                 </div>
 
@@ -116,7 +120,7 @@
                     <label class="text-white mb-2 fs-5">CPP</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">$</span>
-                        <input readonly type="text" id="cpp" class="form-control" placeholder="0.00" />
+                        <input asp-for="CPP" readonly type="text" id="cpp" class="form-control" placeholder="0.00" />
                     </div>
                 </div>
 
@@ -124,7 +128,7 @@
                     <label class="text-white mb-2 fs-5">Employee Insurance</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">$</span>
-                        <input readonly type="text" id="ei" class="form-control" placeholder="0.00" />
+                        <input asp-for="EmployeeInsurance" readonly type="text" id="ei" class="form-control" placeholder="0.00" />
                     </div>
                 </div>
             </div>

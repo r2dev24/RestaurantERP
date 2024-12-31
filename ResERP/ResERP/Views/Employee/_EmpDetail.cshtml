@@ -1,6 +1,10 @@
 ﻿@using ResERP.Models.ViewModels
 @model BranchMemberViewModel
 
+@{
+    var payDetail = ViewData["PayDetail"] as PayrollViewModel;
+}
+
 <div class="modal-header">
     <h5 class="modal-title fs-3 fw-bold" id="employeeDetailModalLabel">
         @Model.FullName 
@@ -44,6 +48,45 @@
             @Model.StreetNumber @Model.StreetAddress @Model.City, @Model.Province @Model.PostalCode, @Model.Country
         </div>
     </div>
+
+   <!--Pay Details-->
+   <div class="mt-5">
+        <table class="table table-bordered table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Salary</th>
+                    <th>Fedral Tax</th>
+                    <th>Provincial Tax</th>
+                    <th>C.P.P</th>
+                    <th>E.I</th>
+                    <th>Pay Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        @* After deduction paid salary will display *@
+                        <span>$@(payDetail.BaseSalary - payDetail.FederalTax - payDetail.ProvincialTax - payDetail.CPP - payDetail.EmployeeInsurance)</span>
+                    </th>
+                    <th>
+                        $@payDetail.FederalTax
+                    </th>
+                    <th>
+                        $@payDetail.ProvincialTax
+                    </th>
+                    <th>
+                        $@payDetail.CPP
+                    </th>
+                    <th>
+                        $@payDetail.EmployeeInsurance
+                    </th>
+                    <th>
+                        @payDetail.PayDate.ToString("yyyy-MM-dd")
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+   </div>
 </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
